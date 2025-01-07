@@ -11,15 +11,12 @@ html {
 
 
 /* ---------------navbar---------------- */
-
 .home-navbar-unique {
   background-color: #003366;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 10px 20px;
+  padding-bottom: 30px;
   color: white;
-  height: 80px;
+  height: 100px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -40,9 +37,45 @@ html {
 
 .home-navbar-unique a:hover {
   background-color: #0056b3;
-  }
-.home-logo-unique{
+}
+
+.home-logo-unique {
   height: 60px;
+  width: auto;
+}
+
+.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(255, 255, 255);
+
+}
+
+.nav-item{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.nav-link{
+  color: white !important;
+}
+.navbar-nav .nav-item .nav-link {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #cce7ff !important;
+}
+
+.navbar-collapse {
+  background-color: #003366; /* Set the background color of the appearing box */
+  padding-left: 10px; 
+  padding-top: 10px;
+  border-radius: 5px; 
 }
 
 /* ----------------end navbar------------------- */
@@ -581,7 +614,7 @@ h1 {
   max-width: 1200px;
 }
 
-.card {
+.card-unique {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -594,25 +627,25 @@ h1 {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.card:hover{
+.card-unique:hover{
   transform: scale(1.05);
   box-shadow: 0 0 16px 4px rgb(34, 135, 229);
 }
 
-.card .image-container {
+.card-unique .image-container {
   flex: 1;
   height: 100%;
   overflow: hidden;
 }
 
-.card .image-container img {
+.card-unique .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 
-.card .content {
+.card-unique .content {
   padding-left: 20px;
   flex: 1;
   display: flex;
@@ -622,13 +655,13 @@ h1 {
   color: #333;
 }
 
-.card .content h3 {
+.card-unique .content h3 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
   color: #2c6487;
 }
 
-.card .content p {
+.card-unique .content p {
   font-size: 1em;
   line-height: 1.2;
   color: #555;
@@ -646,7 +679,7 @@ h1 {
       height: 180px;
   }
   
-  .card {
+  .card-unique {
       width: 90%;
       max-width: 900px;
   }
@@ -670,15 +703,15 @@ h1 {
       font-size: 2em;
   }
   
-  .card {
+  .card-unique {
       height: 250px;
   }
   
-  .card .content h3 {
+  .card-unique .content h3 {
       font-size: 1.5em;
   }
   
-  .card .content p {
+  .card-unique .content p {
       font-size: 0.9em;
   }
 }
@@ -700,17 +733,17 @@ h1 {
       padding: 3em 1em;
   }
   
-  .card {
+  .card-unique {
       flex-direction: column;
       height: auto;
   }
   
-  .card .image-container {
+  .card-unique .image-container {
       width: 100%;
       height: 200px;
   }
   
-  .card .content {
+  .card-unique .content {
       padding: 20px;
       text-align: center;
   }
@@ -746,15 +779,15 @@ h1 {
       font-size: 1em;
   }
   
-  .card .image-container {
+  .card-unique .image-container {
       height: 180px;
   }
   
-  .card .content h3 {
+  .card-unique .content h3 {
       font-size: 1.3em;
   }
   
-  .card .content p {
+  .cardcard-unique .content p {
       font-size: 0.85em;
   }
 }
