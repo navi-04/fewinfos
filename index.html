@@ -290,6 +290,14 @@
   hoverText.style.display = hoverText.style.display === 'none' ? 'block' : 'none';
 });
 
+const menuItems = document.querySelectorAll('.nav-item');
+const toggleMenu = document.getElementById('navbarNav');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    toggleMenu.classList.remove('show');
+  });
+});
 </script>
 
 </body>
