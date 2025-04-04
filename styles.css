@@ -20,6 +20,7 @@ html {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
+    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
 }
 
 * {
@@ -33,6 +34,7 @@ body {
     min-height: 100vh;
     background: var(--bg-light-blue);
     color: var(--dark);
+    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
 }
 
 @keyframes float {
@@ -2370,12 +2372,16 @@ body {
     background: transparent;
     position: relative;
     z-index: 2;
+    overflow: visible !important; /* Ensure the section doesn't trap scroll events */
+    touch-action: auto !important; /* Allow all touch actions including scroll */
 }
 
 .team-container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    overflow: visible;
+    touch-action: auto;
 }
 
 .leadership {
@@ -2637,10 +2643,11 @@ body {
     overflow: hidden;
     padding: 2rem 0;
     margin: 0 -1rem; /* Negative margin to account for container padding */
-    touch-action: pan-y; /* Allow vertical scroll but capture horizontal */
+    touch-action: pan-x; /* Allow vertical scroll but handle horizontal touches */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     -webkit-user-select: none; /* Prevent text selection during swipe */
     user-select: none;
+    will-change: transform;
 }
 
 .team-members {
@@ -2652,15 +2659,26 @@ body {
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Hide vertical scrolling in the container */
     padding-bottom: 1rem; /* Add padding for scrollbar */
-    touch-action: pan-x; /* Allow vertical scroll on the page but handle horizontal in the container */
+    touch-action: pan-x; /* Allow vertical scrolling on the page */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
     -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
 }
 
-/* Hide scrollbar in WebKit browsers while still allowing scrolling */
-.team-members::-webkit-scrollbar {
-    display: none;
+/* Fixed scrolling styles */
+.team-section {
+    overflow: visible !important; /* Ensure the section doesn't trap scroll events */
+    touch-action: auto !important; /* Allow all touch actions including scroll */
+}
+
+.team-container {
+    overflow: visible;
+    touch-action: auto;
+}
+
+/* Make sure the parent elements don't trap scroll events */
+html, body {
+    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
 }
 
 /* Make sure the member cards don't cause unexpected behavior */

@@ -958,10 +958,11 @@ if (teamSlider && prevTeamBtn && nextTeamBtn) {
     let touchEndX = 0;
     let touchEndY = 0;
     let isDragging = false;
-    let isHorizontalScroll = false;
+    let isHorizontalScroll = null; // Set to null initially (not determined)
     let startPosition = 0;
     let startTime = 0;
     let isTouchScrolling = false;
+    let scrollDirectionDecided = false;
     
     // Function to update maxScroll based on current viewport
     const updateMaxScroll = () => {
@@ -1024,19 +1025,18 @@ if (teamSlider && prevTeamBtn && nextTeamBtn) {
         }
     });
     
-    // Touch event handlers for mobile - FIXED to only respond to horizontal movements
+    // FIXED TOUCH HANDLING - Touch event handlers for mobile with improved vertical scrolling
     teamSlider.addEventListener('touchstart', (e) => {
         touchStartX = e.touches[0].clientX;
         touchStartY = e.touches[0].clientY;
         startPosition = currentPosition;
         startTime = Date.now();
         isDragging = true;
-        isHorizontalScroll = false; // Reset direction detection
+        isHorizontalScroll = null; // Reset direction detection on touch start
+        scrollDirectionDecided = false;
         
-        // Add active class for visual feedback
-        teamSlider.classList.add('dragging');
-        updateSliderPosition(false); // Disable transition during drag
-    }, { passive: true });
+        // We don't prevent default here to allow normal touch behavior
+    }, { passive: true }); // Use passive: true to improve performance
     
     teamSlider.addEventListener('touchmove', (e) => {
         if (!isDragging) return;
@@ -1048,48 +1048,45 @@ if (teamSlider && prevTeamBtn && nextTeamBtn) {
         const diffX = touchStartX - touchEndX;
         const diffY = touchStartY - touchEndY;
         
-        // Determine scroll direction if not already set
-        if (!isHorizontalScroll && !isTouchScrolling) {
-            // If horizontal movement is greater than vertical, lock to horizontal scrolling
-            isHorizontalScroll = Math.abs(diffX) > Math.abs(diffY);
+        // Only decide scroll direction once per touch sequence to avoid flip-flopping
+        if (!scrollDirectionDecided) {
+            // If horizontal movement is significantly greater than vertical, lock to horizontal scrolling
+            isHorizontalScroll = Math.abs(diffX) > Math.abs(diffY) * 1.5;
+            scrollDirectionDecided = true;
             
+            // If it's horizontal scrolling, add dragging class for visual feedback
             if (isHorizontalScroll) {
-                isTouchScrolling = true;
-                e.preventDefault(); // Prevent default only for horizontal scrolling
+                teamSlider.classList.add('dragging');
+                teamSlider.style.transition = 'none'; // Disable transition during drag
             }
         }
         
-        // Only handle horizontal scrolling
+        // Handle horizontal scrolling only if determined to be horizontal
         if (isHorizontalScroll) {
+            // Prevent default to avoid page scrolling while sliding horizontally
+            e.preventDefault();
+            
             let newPosition = startPosition + diffX;
             
             // Add resistance when dragging beyond limits
             if (newPosition < 0) {
-                newPosition = -Math.pow(-newPosition, 0.7);
+                newPosition = startPosition + diffX * 0.2; // Apply resistance
             } else if (newPosition > maxScroll) {
-                const overScroll = newPosition - maxScroll;
-                newPosition = maxScroll + Math.pow(overScroll, 0.7);
+                const overScroll = diffX - (maxScroll - startPosition);
+                newPosition = startPosition + (diffX - overScroll * 0.8);
             }
             
             currentPosition = newPosition;
             teamSlider.style.transform = `translateX(${-currentPosition}px)`;
-            
-            // Update pointer events
-            cards.forEach(card => {
-                card.style.pointerEvents = 'none';
-            });
-            
-            // Prevent default to avoid page scrolling while sliding horizontally
-            e.preventDefault();
         }
-    }, { passive: false }); // Set passive to false to allow preventDefault
+        // For vertical movement, we do nothing, allowing the page to scroll naturally
+        
+    }, { passive: !isHorizontalScroll }); // Only non-passive when horizontal scrolling
     
-    teamSlider.addEventListener('touchend', () => {
+    const finishTouchScroll = () => {
         if (!isDragging) return;
         
         isDragging = false;
-        
-        // Remove active class
         teamSlider.classList.remove('dragging');
         
         // Only proceed with snap if this was a horizontal scroll
@@ -1123,23 +1120,16 @@ if (teamSlider && prevTeamBtn && nextTeamBtn) {
             updateSliderPosition(true);
         }
         
-        // Re-enable pointer events after a short delay
+        // Set a timeout to reset variables and re-enable pointer events
         setTimeout(() => {
-            cards.forEach(card => {
-                card.style.pointerEvents = '';
-            });
-            isTouchScrolling = false;
-            isHorizontalScroll = false;
+            isHorizontalScroll = null;
+            scrollDirectionDecided = false;
+            cards.forEach(card => card.style.pointerEvents = '');
         }, 300);
-    });
+    };
     
-    // Prevent clicking during touch scroll
-    teamSlider.addEventListener('click', (e) => {
-        if (isTouchScrolling) {
-            e.preventDefault();
-            e.stopPropagation();
-        }
-    }, true);
+    teamSlider.addEventListener('touchend', finishTouchScroll, { passive: true });
+    teamSlider.addEventListener('touchcancel', finishTouchScroll, { passive: true });
     
     // Recalculate on window resize
     window.addEventListener('resize', () => {
