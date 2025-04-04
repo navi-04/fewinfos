@@ -21,6 +21,7 @@ html {
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
     overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
+    touch-action: pan-y !important; /* Ensure vertical scrolling works site-wide */
 }
 
 * {
@@ -758,12 +759,19 @@ body {
     z-index: 2;
     display: flex;
     align-items: center;
+    overflow: visible !important;
+    touch-action: pan-y !important; /* Ensure vertical scrolling works */
+    -webkit-overflow-scrolling: touch;
+    pointer-events: auto;
 }
 
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    overflow: visible !important;
+    touch-action: pan-y !important;
+    pointer-events: auto;
 }
 
 .services-grid {
@@ -1000,12 +1008,13 @@ body {
 
     .services-grid {
         display: flex;
-        overflow-x: scroll;
+        overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         padding: 2rem;
         gap: 1.5rem;
         margin: 0;
+        touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
     }
 
     .service-card {
@@ -1014,6 +1023,7 @@ body {
         margin-left: 2rem;
         scroll-snap-align: center;
         scroll-snap-stop: always;
+        touch-action: pan-x !important;
     }
 
     .service-nav {
@@ -2373,15 +2383,18 @@ body {
     position: relative;
     z-index: 2;
     overflow: visible !important; /* Ensure the section doesn't trap scroll events */
-    touch-action: auto !important; /* Allow all touch actions including scroll */
+    touch-action: pan-y !important; /* Allow vertical scrolling explicitly */
+    -webkit-overflow-scrolling: touch;
+    pointer-events: auto;
 }
 
 .team-container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    overflow: visible;
-    touch-action: auto;
+    overflow: visible !important;
+    touch-action: pan-y !important; /* Allow vertical scrolling explicitly */
+    pointer-events: auto;
 }
 
 .leadership {
@@ -2532,7 +2545,7 @@ body {
 .philosophy-item p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: var(--dark);
+    color: var (--dark);
 }
 
 .philosophy-item:hover {
@@ -2643,11 +2656,12 @@ body {
     overflow: hidden;
     padding: 2rem 0;
     margin: 0 -1rem; /* Negative margin to account for container padding */
-    touch-action: pan-x; /* Allow vertical scroll but handle horizontal touches */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    -webkit-user-select: none; /* Prevent text selection during swipe */
+    touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
+    -webkit-overflow-scrolling: touch;
+    -webkit-user-select: none;
     user-select: none;
     will-change: transform;
+    pointer-events: auto;
 }
 
 .team-members {
@@ -2656,126 +2670,33 @@ body {
     padding: 1rem;
     transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);
     will-change: transform;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Hide vertical scrolling in the container */
-    padding-bottom: 1rem; /* Add padding for scrollbar */
-    touch-action: pan-x; /* Allow vertical scrolling on the page */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+    touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    pointer-events: auto;
 }
 
-/* Fixed scrolling styles */
-.team-section {
-    overflow: visible !important; /* Ensure the section doesn't trap scroll events */
-    touch-action: auto !important; /* Allow all touch actions including scroll */
-}
-
-.team-container {
-    overflow: visible;
-    touch-action: auto;
-}
-
-/* Make sure the parent elements don't trap scroll events */
-html, body {
-    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
-}
-
-/* Make sure the member cards don't cause unexpected behavior */
+/* Member cards should explicitly capture only horizontal touch */
 .member-card {
     min-width: 280px;
     max-width: 280px;
-    flex-shrink: 0; /* Prevent cards from shrinking */
+    flex-shrink: 0;
+    touch-action: pan-x !important; /* Only handle horizontal scrolling */
+    pointer-events: auto;
     /* ...existing code... */
 }
 
-/* Remove transition during active dragging for better responsiveness */
-.team-members.dragging {
-    transition: none !important;
-    cursor: grabbing;
-}
-
-/* Scroll indicator for touch devices */
-.scroll-indicator {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: rgba(44, 95, 208, 0.3);
-    border-radius: 2px;
-    opacity: 0.7;
-    pointer-events: none;
-    display: none;
-}
-
-@media (hover: none) {
-    .scroll-indicator {
-        display: block;
-    }
-    
-    /* Add visual cues for swiping */
-    .team-slider::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 20px;
-        border-right: 2px solid rgba(44, 95, 208, 0.4);
-        border-bottom: 2px solid rgba(44, 95, 208, 0.4);
-        transform: translateY(-50%) rotate(-45deg);
-        animation: indicatorPulse 1.5s infinite;
-        opacity: 0.7;
-    }
-    
-    @keyframes indicatorPulse {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.7; }
-    }
-}
-
-/* Improve mobile experience */
-@media (max-width: 768px) {
-    .team-members {
-        padding: 0.5rem;
-        gap: 1.5rem;
-        scroll-snap-type: x mandatory; /* Native snap behavior as fallback */
-    }
-    
-    .member-card {
-        scroll-snap-align: center;
-        touch-action: pan-x; /* Ensure horizontal touch gestures work */
-    }
-    
-    /* Make cards more responsive to touch */
-    .member-card:active {
-        transform: scale(0.98);
-        transition: transform 0.2s;
-    }
-    
-    /* Show navigation buttons on touch */
-    .team-nav {
-        opacity: 0.7;
-    }
-}
-
-/* Fix for long press selection on touch devices */
-.member-image, 
-.member-card h3,
-.member-card span {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-/* Better visual indicator for disabled buttons */
-.team-nav button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    background: rgba(44, 95, 208, 0.5);
+/* Fix body and html touch behavior */
+html, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
+    touch-action: pan-y !important; /* Ensure vertical scrolling works site-wide */
 }
 
 .team-slider {
@@ -3172,7 +3093,7 @@ html, body {
 
 .event-date, .event-location {
     font-size: 0.9rem;
-    color: var(--dark);
+    color: var (--dark);
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
@@ -3440,7 +3361,7 @@ html, body {
 .social-container h3 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    color: var(--light);
+    color: var (--light);
 }
 
 .social-icons {
