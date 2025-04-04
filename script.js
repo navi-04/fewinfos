@@ -369,8 +369,55 @@ function animateCounters() {
     });
 }
 
-// Initialize scroll animations
+// Loader functionality
+function initLoader() {
+    const loader = document.querySelector('.page-loader');
+    const progressBar = document.querySelector('.progress-bar');
+    
+    if (!loader || !progressBar) return;
+    
+    // Simulate progress
+    let width = 0;
+    const interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval);
+            
+            // Add small delay before hiding loader
+            setTimeout(() => {
+                loader.classList.add('fade-out');
+                
+                // Remove loader from DOM after animation completes
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Enable scrolling
+                }, 600);
+            }, 300);
+        } else {
+            width += Math.random() * 5;
+            if (width > 100) width = 100;
+            progressBar.style.width = width + '%';
+        }
+    }, 100);
+    
+    // Force loader to hide if it takes too long (10 seconds)
+    setTimeout(() => {
+        if (!loader.classList.contains('fade-out')) {
+            loader.classList.add('fade-out');
+            
+            setTimeout(() => {
+                loader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 600);
+        }
+    }, 10000);
+    
+    // Prevent scrolling while loader is active
+    document.body.style.overflow = 'hidden';
+}
+
+// Initialize loader when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    initLoader();
     createObserver();
     populateWebsiteData();
     
