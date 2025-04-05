@@ -214,9 +214,6 @@ if (servicesGrid && window.innerWidth <= 768) {
     let startX;
     let scrollLeft;
     let isDown = false;
-    let startY; // Add this to track vertical position
-    let isHorizontalScroll = null;
-    let scrollDirectionDecided = false;
 
     servicesGrid.addEventListener('mousedown', e => {
         isDown = true;

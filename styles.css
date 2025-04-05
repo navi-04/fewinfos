@@ -16,11 +16,11 @@
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-html, body {
+html {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
-    overscroll-behavior-y: auto !important; /* Prevent scroll trapping on mobile */
+    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
     touch-action: pan-y !important; /* Ensure vertical scrolling works site-wide */
 }
 
@@ -1015,18 +1015,36 @@ body {
         gap: 1.5rem;
         margin: 0;
         touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
-        pointer-events: auto;
     }
-    
-    /* Add touch-sensitive wrapper */
-    .team-slider, .services-grid {
-        position: relative;
-        z-index: 2;
+
+    .service-card {
+        min-width: 85%;
+        width: 85%;
+        margin-left: 2rem;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        touch-action: pan-x !important;
     }
-    
-    /* Make sure scrollable elements don't trap touch events */
-    .team-members, .services-grid {
-        z-index: 1;
+
+    .service-nav {
+        display: flex; /* Show on mobile */
+        margin-top: 2rem;
+    }
+
+    .service-nav button {
+        background: rgba(44, 95, 208, 0.9);
+        color: var(--light);
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(44, 95, 208, 0.3);
+        backdrop-filter: blur(5px);
     }
 }
 
@@ -2635,7 +2653,7 @@ body {
 
 .team-slider {
     position: relative;
-    overflow: visible !important;
+    overflow: hidden;
     padding: 2rem 0;
     margin: 0 -1rem; /* Negative margin to account for container padding */
     touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
@@ -2660,8 +2678,6 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     pointer-events: auto;
-    position: relative;
-    z-index: 1;
 }
 
 /* Member cards should explicitly capture only horizontal touch */
@@ -2672,6 +2688,15 @@ body {
     touch-action: pan-x !important; /* Only handle horizontal scrolling */
     pointer-events: auto;
     /* ...existing code... */
+}
+
+/* Fix body and html touch behavior */
+html, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
+    touch-action: pan-y !important; /* Ensure vertical scrolling works site-wide */
 }
 
 .team-slider {
@@ -2919,7 +2944,7 @@ body {
 .leader-goals p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var (--dark);
+    color: var(--dark);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -3082,7 +3107,7 @@ body {
 
 .event-description {
     font-size: 1rem;
-    color: var (--dark);
+    color: var(--dark);
     line-height: 1.5;
     margin: 1rem 0 1.5rem;
 }
