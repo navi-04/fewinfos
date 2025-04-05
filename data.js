@@ -58,7 +58,7 @@ const websiteData = {
         {
             title: "FewAI CLI",
             description: "Next-generation command line bot",
-            features: ["Advanced coding in terminal", "Automated works", "Integraion with the system"],
+            features: ["Advanced coding in terminal", "Automated works", "Integration with the system"],
             icon: "fas fa-shield-alt",
             github: "https://github.com/fewinfos/securegate",
             isFeatured: false
