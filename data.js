@@ -102,7 +102,7 @@ const websiteData = {
             },
             {
                 name: "Nureshma",
-                position: "Techical Engineer & Clients Manager",
+                position: "Technical Engineer & Clients Manager",
                 image: "images/nureshma.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -112,7 +112,7 @@ const websiteData = {
             },
             {
                 name: "Nirmala",
-                position: "Socia Media Manager & Technical Engineer",
+                position: "Social Media Manager & Technical Engineer",
                 image: "images/nirmala.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -122,7 +122,7 @@ const websiteData = {
             },
             {
                 name: "Nishanthi",
-                position: "Techical Engineer & Clients Manager",
+                position: "Technical Engineer & Clients Manager",
                 image: "images/nishanthi.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -132,7 +132,7 @@ const websiteData = {
             },
             {
                 name: "Shivani",
-                position: "Socia Media Manager & Technical Engineer",
+                position: "Social Media Manager & Technical Engineer",
                 image: "images/shivani.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -142,7 +142,7 @@ const websiteData = {
             },
             {
                 name: "Sudeep",
-                position: "Techical Engineer & Clients Manager",
+                position: "Technical Engineer & Clients Manager",
                 image: "images/sudeep.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -162,7 +162,7 @@ const websiteData = {
             },
             {
                 name: "Sudharashanan",
-                position: "Techical Engineer & Clients Manager",
+                position: "Technical Engineer & Clients Manager",
                 image: "images/sudharashanan.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
