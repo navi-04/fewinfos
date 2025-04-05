@@ -233,7 +233,7 @@ const websiteData = {
             price: "₹999",
             discount: 40,
             rating: 4.7,
-            students: 8
+            students: 28
         },
         {
             title: "Git and Github",
@@ -248,7 +248,7 @@ const websiteData = {
             price: "₹899",
             discount: 40,
             rating: 4.5,
-            students: 17
+            students: 27
         },
         {
             title: "Intermediate level in Python",
@@ -263,7 +263,7 @@ const websiteData = {
             price: "₹1499",
             discount: 25,
             rating: 4.6,
-            students: 23
+            students: 13
         }
     ]
 };
