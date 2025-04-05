@@ -198,9 +198,9 @@ const websiteData = {
         upcomingEvents: [
             {
                 title: "AI Innovation Summit",
-                date: "Nov 15-17, 2025",
+                date: "April 15-17, 2025",
                 location: "MKCE - Karur, India",
-                description: "Explore the future of AI and machine learning with top experts and thought leaders.",
+                description: "Explore the future of AI and machine learning with top experts and leaders.",
                 link: "#contact",
                 buttonText: "Register Now"
             }
@@ -256,7 +256,7 @@ const websiteData = {
             level: "Intermediate",
             duration: "8 weeks",
             description: "Master Python for data science and Machine learning",
-            features: ["Hands-on Labs", "Industry Experts", "Certification Prep", "Real-world Case Studies"],
+            features: ["Hands-on Labs", "Industry Experts", "Certification Course", "Real-world Case Studies"],
             category: "infrastructure",
             isFeatured: false,
             originalPrice: "₹1999",
