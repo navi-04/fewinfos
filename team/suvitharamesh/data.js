@@ -1,6 +1,6 @@
 const siteData = {
   personalInfo: {
-    name: "Suvitha Ramesh",
+    name: "Suvitha R",
     roles: ["Front-End Developer", "UI/UX Designer"],
     description:
       "Crafting digital experiences that merge creativity with functionality",
