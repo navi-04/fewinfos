@@ -6,7 +6,7 @@ const siteData = {
       "Crafting digital experiences that merge creativity with functionality",
     stats: [
       { number: "3", label: "Projects" },
-      { number: "4", label: "Certifications" },
+      { number: "5", label: "Certifications" },
     ],
     contact: {
       phone: "+91-6379647335",
