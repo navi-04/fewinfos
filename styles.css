@@ -760,7 +760,7 @@ body {
     display: flex;
     align-items: center;
     overflow: visible !important;
-    touch-action: pan-y !important; /* Ensure vertical scrolling works */
+    touch-action: pan-y pan-x; 
     -webkit-overflow-scrolling: touch;
     pointer-events: auto;
 }
@@ -1014,7 +1014,7 @@ body {
         padding: 2rem;
         gap: 1.5rem;
         margin: 0;
-        touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
+        touch-action: pan-y pan-x; /* Only handle horizontal scrolling, not vertical */
     }
 
     .service-card {
@@ -1023,7 +1023,7 @@ body {
         margin-left: 2rem;
         scroll-snap-align: center;
         scroll-snap-stop: always;
-        touch-action: pan-x !important;
+        touch-action: pan-y pan-x; 
     }
 
     .service-nav {
@@ -2656,7 +2656,7 @@ body {
     overflow: hidden;
     padding: 2rem 0;
     margin: 0 -1rem; /* Negative margin to account for container padding */
-    touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
+    touch-action: pan-y pan-x;  /* Only handle horizontal scrolling, not vertical */
     -webkit-overflow-scrolling: touch;
     -webkit-user-select: none;
     user-select: none;
@@ -2673,7 +2673,7 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 1rem;
-    touch-action: pan-x !important; /* Only handle horizontal scrolling, not vertical */
+    touch-action: pan-y pan-x; 
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -2685,7 +2685,7 @@ body {
     min-width: 280px;
     max-width: 280px;
     flex-shrink: 0;
-    touch-action: pan-x !important; /* Only handle horizontal scrolling */
+    touch-action: pan-y pan-x; 
     pointer-events: auto;
     /* ...existing code... */
 }
@@ -2696,7 +2696,9 @@ html, body {
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
     overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
-    touch-action: pan-y !important; /* Ensure vertical scrolling works site-wide */
+    touch-action: pan-y pan-x; 
+
+
 }
 
 .team-slider {
