@@ -197,6 +197,14 @@ const websiteData = {
         ],
         upcomingEvents: [
             {
+                title: "AI tools workshop ",
+                date: "July 13(7pm - 9pm), 2025",
+                location: "Online",
+                description: "Get to know about the life changing AI tools",
+                link: "https://forms.gle/mRXDzTrdng12CSwK7",
+                buttonText: "Register Now"
+            },
+            {
                 title: "AI Innovation Summit",
                 date: "April 15-17, 2025",
                 location: "MKCE - Karur, India",
@@ -204,6 +212,7 @@ const websiteData = {
                 link: "#contact",
                 buttonText: "Register Now"
             }
+          
         ],
         pastEvents: [
             // {
