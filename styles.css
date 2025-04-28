@@ -21,7 +21,7 @@ html {
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
     overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
-    touch-action: pan-y pan-x; /* Ensure vertical scrolling works site-wide */
+    touch-action: pan-y !important; /* Ensure vertical scrolling works site-wide */
 }
 
 * {
@@ -770,7 +770,7 @@ body {
     margin: 0 auto;
     width: 100%;
     overflow: visible !important;
-    touch-action: pan-y pan-x; 
+    touch-action: pan-y !important;
     pointer-events: auto;
 }
 
@@ -2382,7 +2382,8 @@ body {
     background: transparent;
     position: relative;
     z-index: 2;
-    overflow: visible !important; /* Ensure the section doesn't trap scroll events     ouch-action: pan-y pan-x; ant; /* Allow vertical scrolling explicitly */
+    overflow: visible !important; /* Ensure the section doesn't trap scroll events */
+    touch-action: pan-y !important; /* Allow vertical scrolling explicitly */
     -webkit-overflow-scrolling: touch;
     pointer-events: auto;
 }
@@ -2392,7 +2393,7 @@ body {
     margin: 0 auto;
     width: 100%;
     overflow: visible !important;
-ion: pan-y !importatouch-action:nt; /* Allow vertical scrolling explicitly */
+    touch-action: pan-y !important; /* Allow vertical scrolling explicitly */
     pointer-events: auto;
 }
 
