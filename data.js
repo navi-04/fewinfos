@@ -229,9 +229,9 @@ const websiteData = {
             features: ["Expert Mentors", "Real-world Projects", "Lifetime Access"],
             category: "development",
             isFeatured: true,
-            originalPrice: "₹1599",
-            price: "₹999",
-            discount: 40,
+            originalPrice: "₹599",
+            price: "₹199",
+            discount: 65,
             rating: 4.7,
             students: 28
         },
@@ -244,8 +244,8 @@ const websiteData = {
             features: ["Live Sessions", "Practical Exercises", "Industry Projects"],
             category: "data",
             isFeatured: true,
-            originalPrice: "₹1499",
-            price: "₹899",
+            originalPrice: "₹699",
+            price: "₹399",
             discount: 40,
             rating: 4.5,
             students: 27
@@ -259,9 +259,9 @@ const websiteData = {
             features: ["Hands-on Labs", "Industry Experts", "Certification Course", "Real-world Case Studies"],
             category: "infrastructure",
             isFeatured: false,
-            originalPrice: "₹1999",
-            price: "₹1499",
-            discount: 25,
+            originalPrice: "₹999",
+            price: "₹499",
+            discount: 50,
             rating: 4.6,
             students: 13
         }
