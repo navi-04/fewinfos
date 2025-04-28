@@ -1,13 +1,18 @@
 :root {
-    --primary: #003366;
+    --primary: #4a90e2; /* Lighter blue for better contrast on dark */
     --secondary: #2c5fd0;
-    --dark: #1a1a1a;
-    --light: rgb(255, 255, 255);
-    --glass: rgba(255, 255, 255, 0.1);
+    --dark: #e0e0e0; /* Lighter color for text on dark backgrounds */
+    --light: #121212; /* Dark color for backgrounds */
+    --glass: rgba(0, 0, 0, 0.3); /* Darker glass effect */
     --blur: blur(10px);
     --nav-gradient-start: rgba(44, 95, 208, 0.35);
     --nav-gradient-end: rgba(74, 144, 226, 0.45);
-    --bg-light-blue: #f0f5ff;
+    --bg-light-blue: #121820; /* Dark blue background instead of light blue */
+    --card-bg: #1a1a2e; /* Dark card background */
+    --card-hover: #242442; /* Slightly lighter for hover states */
+    --border-color: rgba(74, 144, 226, 0.2); /* Subtle border color */
+    --text-secondary: #a0a0a0; /* Secondary text color */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -68,14 +73,14 @@ body {
     padding: 1rem 2rem;
     background: linear-gradient(
         135deg,
-        var(--nav-gradient-start),
-        var(--nav-gradient-end)
+        rgba(26, 32, 44, 0.8),
+        rgba(44, 55, 75, 0.9)
     );
     border-radius: 20px;
     backdrop-filter: var(--blur);
     -webkit-backdrop-filter: var(--blur);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(44, 95, 208, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -395,8 +400,8 @@ body {
     }
 
     .stack-item {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -504,9 +509,9 @@ body {
     padding: 1rem 2rem;
     border-radius: 15px;
     color: var(--dark);
+    background: var(--card-bg);
     border: 2px solid var(--primary);
-    background: var(--glass);
-    box-shadow: 0 4px 15px rgba(44, 95, 208, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -783,22 +788,18 @@ body {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--card-bg);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
-    padding: 3rem 2rem;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    border: 1px solid rgba(44, 95, 208, 0.1);
-    box-shadow: 0 10px 30px rgba(44, 95, 208, 0.1);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .service-card:hover {
@@ -878,7 +879,7 @@ body {
     border-radius: 25px;
     background: rgba(143, 230, 190, 0.95);
     backdrop-filter: blur(5px);
-    box-shadow: 0 4px 15px rgba(44, 95, 208, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-text {
@@ -1157,7 +1158,7 @@ body {
     transform: translateX(120%);
     transition: transform 0.3s ease, opacity 0.2s ease;
     z-index: 1000;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     opacity: 0;
 }
 
@@ -1216,7 +1217,7 @@ body {
     flex: 1;
     padding: 1rem;
     overflow-y: auto;
-    background: aliceblue;
+    background: var(--bg-light-blue);
     scroll-behavior: smooth;
     /* Enable smooth scrolling */
 }
@@ -1258,12 +1259,12 @@ body {
 
 .message p {
     padding: 0.8rem 1.2rem;
-    background: white;
+    background: var(--card-bg);
+    color: var(--dark);
     border-radius: 15px;
     font-size: 0.95rem;
     line-height: 1.4;
-    color: var(--dark);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .message.user p {
@@ -1276,15 +1277,15 @@ body {
     display: flex;
     gap: 0.8rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background: white;
+    background: var(--card-bg);
 }
 
 .chat-input input {
     flex: 1;
     padding: 0.8rem 1.2rem;
-    border: 1px solid rgba(44, 95, 208, 0.3);
+    border: 1px solid var(--border-color);
     border-radius: 25px;
-    background: white;
+    background: var(--light);
     color: var(--dark);
     font-size: 0.95rem;
     transition: all 0.3s ease;
@@ -1378,11 +1379,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(26, 26, 46, 0.7);
     border-radius: 30px;
     box-shadow: 0 15px 35px rgba(44, 95, 208, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border-color);
 }
 
 .section-title {
@@ -1466,8 +1467,8 @@ body {
 .about-text {
     padding: 1rem;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 8px 25px rgba(44, 95, 208, 0.1);
+    background: var(--card-bg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .about-logo {
@@ -1647,10 +1648,10 @@ body {
 .feature {
     padding: 2rem;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 8px 25px rgba(44, 95, 208, 0.1);
+    background: var(--card-bg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    border: 1px solid rgba(44, 95, 208, 0.1);
+    border: 1px solid var(--border-color);
     text-align: center;
 }
 
@@ -2036,7 +2037,7 @@ body {
 }
 
 .product-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--card-bg);
     border-radius: 30px;
     padding: 3rem;
     display: flex;
@@ -2224,12 +2225,12 @@ body {
 }
 
 .course-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--card-bg);
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.4s ease;
     box-shadow: 0 10px 30px rgba(44, 95, 208, 0.1);
-    border: 1px solid rgba(44, 95, 208, 0.1);
+    border: 1px solid var(--border-color);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -2382,7 +2383,8 @@ body {
     background: transparent;
     position: relative;
     z-index: 2;
-    overflow: visible !important; /* Ensure the section doesn't trap scroll events     ouch-action: pan-y pan-x; ant; /* Allow vertical scrolling explicitly */
+    overflow: visible !important; /* Ensure the section doesn't trap scroll events */
+    touch-action: pan-y pan-x; /* Allow vertical scrolling explicitly */
     -webkit-overflow-scrolling: touch;
     pointer-events: auto;
 }
@@ -2392,7 +2394,7 @@ body {
     margin: 0 auto;
     width: 100%;
     overflow: visible !important;
-ion: pan-y !importatouch-action:nt; /* Allow vertical scrolling explicitly */
+    touch-action: pan-y pan-x; /* Allow vertical scrolling explicitly */
     pointer-events: auto;
 }
 
@@ -2696,8 +2698,6 @@ html, body {
     scroll-behavior: smooth;
     overscroll-behavior-y: auto; /* Prevent scroll trapping on mobile */
     touch-action: pan-y pan-x; 
-
-
 }
 
 .team-slider {
@@ -2717,14 +2717,13 @@ html, body {
 .member-card {
     min-width: 280px;
     max-width: 280px;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--card-bg);
     border-radius: 25px;
     padding: 1.5rem;
     text-align: left;
     transition: all 0.4s ease;
-    box-shadow: 0 10px 30px rgba(44, 95, 208, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
 }
@@ -2742,7 +2741,7 @@ html, body {
     margin-bottom: 1.5rem;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(44, 95, 208, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .member-image img {
@@ -3040,19 +3039,19 @@ html, body {
 }
 
 .event-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--card-bg);
     border-radius: 15px;
     padding: 1.5rem;
-    box-shadow: 0 8px 25px rgba(44, 95, 208, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    border: 1px solid rgba(44, 95, 208, 0.1);
+    border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
 }
 
 .event-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(44, 95, 208, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .live-badge {
@@ -3169,9 +3168,9 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 250px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px dashed rgba(44, 95, 208, 0.5);
-    box-shadow: 0 8px 20px rgba(44, 95, 208, 0.1);
+    background: var(--card-bg);
+    border: 1px dashed var(--border-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     text-align: center;
     padding: 2rem;
@@ -3181,7 +3180,7 @@ html, body {
 
 .empty-events:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(44, 95, 208, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     border: 1px dashed rgba(44, 95, 208, 0.7);
 }
 
@@ -3204,7 +3203,6 @@ html, body {
     font-size: 1rem;
     color: white;
     opacity: 0.7;
-   
 }
 
 .empty-events h4 {
@@ -3300,10 +3298,10 @@ html, body {
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     margin-top: 4rem;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--card-bg);
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(44, 95, 208, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .contact-info {
@@ -3392,7 +3390,7 @@ html, body {
 
 .contact-form-container {
     padding: 3rem;
-    background: var(--light);
+    background: var(--card-bg);
     position: relative;
 }
 
@@ -3412,7 +3410,7 @@ html, body {
     padding: 1rem 1rem 1rem 3rem;
     border: 1px solid rgba(44, 95, 208, 0.2);
     border-radius: 10px;
-    background: rgba(240, 245, 255, 0.5);
+    background: rgba(18, 18, 30, 0.7);
     font-size: 1rem;
     transition: all 0.3s ease;
 }
@@ -3425,7 +3423,7 @@ html, body {
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--primary);
-    background: rgba(240, 245, 255, 0.8);
+    background: rgba(18, 18, 30, 0.9);
     outline: none;
     box-shadow: 0 5px 15px rgba(44, 95, 208, 0.1);
 }
@@ -3502,7 +3500,7 @@ html, body {
 .form-success {
     position: absolute;
     inset: 0;
-    background: var(--light);
+    background: var(--card-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
