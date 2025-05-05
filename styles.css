@@ -2300,7 +2300,7 @@ body {
 .course-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--dark);
+    color: var (--dark);
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
@@ -3337,7 +3337,7 @@ html, body {
     height: 50px;
     border-radius: 50%;
     background: var(--light);
-    color: var(--primary);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3730,6 +3730,78 @@ html, body {
     .reset-form {
         padding: 0.7rem 1.2rem;
         font-size: 0.9rem;
+    }
+}
+
+/* Updated Contact Section Styles with form removed */
+.contact-content-centered {
+    grid-template-columns: 1fr !important;
+    max-width: 600px;
+    margin: 4rem auto 0;
+    box-shadow: 0 15px 35px rgba(44, 95, 208, 0.15);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.contact-content-centered .contact-info {
+    padding: 3rem;
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 30px;
+    box-shadow: none;
+}
+
+.contact-content-centered .contact-card {
+    background: rgba(44, 95, 208, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.contact-content-centered .contact-icon {
+    background: var(--primary);
+}
+
+.contact-content-centered .contact-details h3 {
+    color: var(--primary);
+}
+
+.contact-content-centered .contact-details p {
+    color: var(--dark);
+}
+
+.contact-content-centered .social-container h3 {
+    color: var(--primary);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-content-centered .social-icons {
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contact-content-centered .social-icon {
+    background: rgba(44, 95, 208, 0.1);
+    color: var(--primary);
+}
+
+.contact-content-centered .social-icon:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
+@media (max-width: 768px) {
+    .contact-content-centered {
+        margin: 2rem 1rem 0;
+    }
+    
+    .contact-content-centered .contact-info {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-content-centered .contact-info {
+        padding: 1.5rem;
     }
 }
 

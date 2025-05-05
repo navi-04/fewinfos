@@ -847,7 +847,7 @@ function populateTeam() {
                     <div class="social-links">
                         <a href="${member.socials.github}" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="${member.socials.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="${member.socials.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>
+                        
                     </div>
                 </div>
                 <h3>${member.name}</h3>
