@@ -239,8 +239,8 @@ const websiteData = {
             category: "development",
             isFeatured: true,
             originalPrice: "₹599",
-            price: "₹199",
-            discount: 65,
+            price: "₹299",
+            discount: 50,
             rating: 4.7,
             students: 28
         },
