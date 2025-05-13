@@ -25,66 +25,34 @@ const eventData = [
     "description": "Experience seamless coding with Cursor, an AI-integrated code editor that provides intelligent code completions, real-time collaboration, and context-aware assistance to boost your development workflow.",
     "link": "https://www.cursor.com/",
     "prompt": "Develop a dynamic and reusable form in React using custom hooks and Context API for validation and state management."
-  },
-
-  {
-    "type": 2,
-    "level": 4,
-    "topic": "CONTENT GENERATION - WRITESONIC",
-    "description": "Writesonic helps you generate high-quality marketing copy, blogs, and emails using AI, based on your input prompts and tone.",
-    "link": "https://writesonic.com/",
-    "prompt": "Generate a 300-word blog on 'How AI is transforming education'."
-  },
-  {
-    "type": 2,
-    "level": 5,
-    "topic": "CONTENT GENERATION - COPY.AI",
-    "description": "Copy.ai is an AI content assistant that helps you instantly create content like product descriptions, social media posts, and more.",
-    "link": "https://www.copy.ai/",
-    "prompt": "Write a product description for a smart water bottle aimed at fitness enthusiasts."
-  },
-
-  {
-    "type": 2,
-    "level": 6,
-    "topic": "WEBSITE BUILDING - FRAMER",
-    "description": "Framer is a no-code website builder with AI features for rapid, interactive website creation and animations.",
-    "link": "https://www.framer.com/",
-    "prompt": "Design a modern portfolio website layout for a graphic designer."
-  },
-  {
-    "type": 2,
-    "level": 7,
-    "topic": "WEBSITE BUILDING - SPLINE",
-    "description": "Spline lets you design and animate 3D web experiences in a collaborative, visual interface.",
-    "link": "https://spline.design/",
-    "prompt": "Create a rotating 3D cube with hover animation for a homepage hero section."
-  },
-  {
-    "type": 2,
-    "level": 8,
-    "topic": "WEBSITE BUILDING - DORA",
-    "description": "Dora is an AI website builder with visual design tools and animation features to build responsive websites without code.",
-    "link": "https://www.dora.run/",
-    "prompt": "Design a landing page for an AI productivity app with animation transitions."
-  },
-  {
-    "type": 2,
-    "level": 9,
-    "topic": "WEBSITE BUILDING - LOVABLE",
-    "description": "Lovable helps you generate visually appealing websites powered by AI, aimed at startups and creative portfolios.",
-    "link": "https://lovable.so/",
-    "prompt": "Generate a homepage layout for a wellness app startup."
-  },
-  {
-    "type": 2,
-    "level": 10,
-    "topic": "WEBSITE BUILDING - GAMMA",
-    "description": "Gamma is an AI-powered tool to create stunning, interactive presentations and web pages from plain text.",
-    "link": "https://gamma.app/",
-    "prompt": "Create a one-page interactive presentation for a new AI-powered study assistant."
   }
 ]
 
-
+  // ,
+  // {
+  //   type: 2, 
+  //   level: 3,
+  //   topic: "Web Development Fundamentals",
+  //   content: "Web development is the work involved in developing a website for the Internet or an intranet. It can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services."
+  // },
+  // {
+  //   type: 2,
+  //   level: 4,
+  //   topic: "Programming Concepts",
+  //   content: "Understanding fundamental programming concepts such as algorithms, data structures, and design patterns is essential for writing efficient and maintainable code. These principles transcend specific languages and provide a foundation for solving complex problems."
+  // },
+  //   {
+  //   type: 3, 
+  //   level: 5,
+  //   topic: "Frontend Frameworks",
+  //   imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+  //   content: "Frontend frameworks like React, Angular, and Vue provide robust architectures for building dynamic and responsive user interfaces. They offer components, state management, and other tools to streamline development."
+  // },
+  // {
+  //   type: 3,
+  //   level: 6,
+  //   topic: "Cloud Computing",
+  //   imageUrl: "https://images.unsplash.com/photo-1667381293896-db2c0ca309cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+  //   content: "Cloud computing delivers computing services over the internet, offering flexible resources, rapid innovation, and economies of scale. Services include infrastructure, platforms, and software, enabling businesses to operate without managing physical servers."
+  // }
 ];
