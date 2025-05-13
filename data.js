@@ -92,7 +92,7 @@ const websiteData = {
         members: [
             {
                 name: "Suvitha",
-                position: "Co-founder & Lead Developer & Event Manager",
+                position: "Lead Developer & Event Manager",
                 image: "images/suvitha.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
