@@ -111,7 +111,7 @@ const eventData = [
     "level": 13,
     "topic": "ARCHITECTURE DIAGRAM - ERASER",
     "description": "Eraser is an AI-powered whiteboard and diagram tool for drawing architecture workflows and software diagrams collaboratively.",
-    "link": "https://eraser.io/",
+    "link": "https://app.eraser.io/",
     "prompt": "Create a clear, colorful architecture diagram for a modern web application. Include components like frontend, backend, database, API gateway, authentication, and cloud services. Use icons and color-coded sections for clarity. The diagram should be visually appealing, well-labeled, and easy to understand."
   },
   {
