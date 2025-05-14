@@ -1,4 +1,4 @@
-const sitePasscode = "event123"; // This is the passcode to unlock the content
+const sitePasscode = "FIW251"; // This is the passcode to unlock the content
 
 const eventData = [ 
   {
