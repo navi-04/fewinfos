@@ -33,6 +33,14 @@ const eventData = [
     "link": "https://writesonic.com/",
     "prompt": "Generate a 300-word blog on 'How AI is transforming education'."
   },
+  {
+    "type": 3,
+    "level": 3,
+    "topic": "CONTENT GENERATION - COPY.AI",
+    "description": "Copy.ai is an AI content assistant that helps you instantly create content like product descriptions, social media posts, and more.",
+    "link": "https://www.copy.ai/",
+    "prompt": "Write a product description for a smart water bottle aimed at fitness enthusiasts."
+  },
   
  /* {
     type: 2,
