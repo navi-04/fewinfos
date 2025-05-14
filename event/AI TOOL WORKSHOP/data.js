@@ -1,6 +1,6 @@
 const sitePasscode = "event123"; // This is the passcode to unlock the content
 
-const eventData = [
+const eventData = [ 
   {
     "type": 1,
     "level": 1,
@@ -26,6 +26,15 @@ const eventData = [
     "prompt": "Develop a dynamic and reusable form in React using custom hooks and Context API for validation and state management."
   },
   {
+    "type": 3,
+    "level": 3,
+    "topic": "CONTENT GENERATION - WRITESONIC",
+    "description": "Writesonic helps you generate high-quality marketing copy, blogs, and emails using AI, based on your input prompts and tone.",
+    "link": "https://writesonic.com/",
+    "prompt": "Generate a 300-word blog on 'How AI is transforming education'."
+  },
+  
+ /* {
     type: 2,
     level: 4,
     topic: "Programming Concepts",
@@ -45,4 +54,5 @@ const eventData = [
     imageUrl: "https://images.unsplash.com/photo-1667381293896-db2c0ca309cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
     content: "Cloud computing delivers computing services over the internet, offering flexible resources, rapid innovation, and economies of scale. Services include infrastructure, platforms, and software, enabling businesses to operate without managing physical servers."
   }
-];
+];*/
+]
