@@ -120,7 +120,7 @@ const eventData = [
     "prompt": "Design a startup pitch slide for an eco-friendly delivery app using AI-generated illustrations."
   },
   {
-    "type": 2,
+    "type": 3,
     "level": 16,
     "topic": "STARTUP TOOL - PERPLEXITY",
     "description": "Perplexity is an AI-powered search and research assistant that helps startups get instant, accurate answers with cited sources—great for competitive analysis and idea validation.",
