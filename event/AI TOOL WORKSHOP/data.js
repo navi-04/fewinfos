@@ -48,7 +48,7 @@ const eventData = [
     "topic": "PROGRAMMING - CURSOR",
     "description": "Experience seamless coding with Cursor, an AI-integrated code editor that provides intelligent code completions, real-time collaboration, and context-aware assistance to boost your development workflow.",
     "link": "https://www.cursor.com/",
-    "prompt": "Develop a dynamic and reusable form in React using custom hooks and Context API for validation and state management."
+    "prompt": "Give me full automated bus ticket booking system with html,css for frontend and python for backend."
   },
   {
     "type": 1,
@@ -88,15 +88,15 @@ const eventData = [
     "topic": "WEBSITE BUILDING - DORA",
     "description": "Dora is an AI website builder with visual design tools and animation features to build responsive websites without code.",
     "link": "https://www.dora.run/",
-    "prompt": "Design a landing page for an AI productivity app with animation transitions."
+    "prompt": "Design a landing page for a top luxury mechanical watch store."
   },
   {
     "type": 1,
     "level": 11,
     "topic": "WEBSITE BUILDING - LOVABLE",
     "description": "Lovable helps you generate visually appealing websites powered by AI, aimed at startups and creative portfolios.",
-    "link": "https://lovable.so/",
-    "prompt": "Generate a homepage layout for a wellness app startup."
+    "link": "https://lovable.dev/",
+    "prompt": "Create a modern, animated portfolio website design. Include sections for Hero, About, Skills, Projects, Testimonials, Contact, and Footer. Use smooth scroll and hover animations, a clean layout, and responsive design. Suggest a tech stack like React + Tailwind + Framer Motion. Keep the code modular and stylish."
   },
   {
     "type": 1,
@@ -104,7 +104,7 @@ const eventData = [
     "topic": "WEBSITE BUILDING - GAMMA",
     "description": "Gamma is an AI-powered tool to create stunning, interactive presentations and web pages from plain text.",
     "link": "https://gamma.app/",
-    "prompt": "Create a one-page interactive presentation for a new AI-powered study assistant."
+    "prompt": "Create a interactive presentation for a new AI-powered study assistant."
   },
    {
     "type": 1,
@@ -112,14 +112,14 @@ const eventData = [
     "topic": "ARCHITECTURE DIAGRAM - ERASER",
     "description": "Eraser is an AI-powered whiteboard and diagram tool for drawing architecture workflows and software diagrams collaboratively.",
     "link": "https://eraser.io/",
-    "prompt": "Create a system architecture diagram for a food delivery app with microservices."
+    "prompt": "Create a clear, colorful architecture diagram for a modern web application. Include components like frontend, backend, database, API gateway, authentication, and cloud services. Use icons and color-coded sections for clarity. The diagram should be visually appealing, well-labeled, and easy to understand."
   },
   {
   "type": 1,
   "level": 14,
   "topic": "APP CREATOR - WEBDRAW",
   "description": "WebDraw is a no-code visual editor that lets you design and publish fully responsive web and mobile applications with built-in AI support.",
-  "link": "https://webdraw.design/",
+  "link": "https://webdraw.com/",
   "prompt": "Create a UI layout for a travel booking app with search, filtering, and booking confirmation screens."
 }, 
  {
@@ -134,15 +134,15 @@ const eventData = [
     "topic": "STARTUP TOOL - OPENART",
     "description": "OpenArt is an AI platform that helps startups and creators generate high-quality visuals and art assets using text-to-image prompts, ideal for branding and marketing.",
     "link": "https://openart.ai/",
-    "prompt": "Generate a futuristic logo design for a tech startup named 'NeuraLink'."
+    "prompt": "Create a colorful illustration of a man standing and holding a large advertisement board that reads: 'WELCOME TO AI WORKSHOP'. The man should look friendly and confident. The board should have bold, eye-catching fonts and a modern design. Use a bright background and clear lighting."
   },
   {
     "type": 1,
     "level": 17,
     "topic": "STARTUP TOOL - IDEAGRAM",
     "description": "Ideagram uses AI to turn ideas into visuals by generating design concepts, illustrations, and mockups from natural language prompts.",
-    "link": "https://ideagram.ai/",
-    "prompt": "Design a startup pitch slide for an eco-friendly delivery app using AI-generated illustrations."
+    "link": "https://ideogram.ai/t/explore",
+    "prompt": "Illustrate a man holding a large board that says: 'EXPLORE CAREERS IN ARTIFICIAL INTELLIGENCE'. The background should show a tech expo or futuristic city with AI-themed visuals."
   },
   {
     "type": 1,
