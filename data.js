@@ -192,7 +192,7 @@ const websiteData = {
                 location: "MKCE - Karur, India",
                 description: "Explore the future of AI and machine learning with top experts and leaders.",
                 link: "#contact",
-                buttonText: "Register Now"
+                buttonText: "LIVE NOW"
             }
         ],
         upcomingEvents: [
