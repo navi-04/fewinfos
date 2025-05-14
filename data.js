@@ -191,7 +191,7 @@ const websiteData = {
                 date: "MAY 14-16, 2025",
                 location: "MKCE - Karur, India",
                 description: "Explore the future of AI and machine learning with top experts and leaders.",
-                link: "#contact",
+                link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
                 buttonText: "LIVE NOW"
             }
         ],
