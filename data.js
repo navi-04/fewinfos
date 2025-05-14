@@ -186,14 +186,14 @@ const websiteData = {
     // Events data
     events: {
         liveEvents: [
-            // {
-            //     title: "Tech Conference 2023",
-            //     date: "Oct 15-16, 2023",
-            //     location: "Virtual",
-            //     description: "Join us for our virtual tech conference with industry leaders discussing the latest innovations.",
-            //     link: "#",
-            //     buttonText: "Join Stream"
-            // }
+            {
+                title: "AI Innovation Summit",
+                date: "MAY 14-16, 2025",
+                location: "MKCE - Karur, India",
+                description: "Explore the future of AI and machine learning with top experts and leaders.",
+                link: "#contact",
+                buttonText: "Register Now"
+            }
         ],
         upcomingEvents: [
             {
@@ -203,15 +203,16 @@ const websiteData = {
                 description: "Get to know about the life changing AI tools",
                 link: "https://forms.gle/mRXDzTrdng12CSwK7",
                 buttonText: "Register Now"
-            },
-            {
-                title: "AI Innovation Summit",
-                date: "April 15-17, 2025",
-                location: "MKCE - Karur, India",
-                description: "Explore the future of AI and machine learning with top experts and leaders.",
-                link: "#contact",
-                buttonText: "Register Now"
             }
+            // ,
+            // {
+            //     title: "AI Innovation Summit",
+            //     date: "April 15-17, 2025",
+            //     location: "MKCE - Karur, India",
+            //     description: "Explore the future of AI and machine learning with top experts and leaders.",
+            //     link: "#contact",
+            //     buttonText: "Register Now"
+            // }
           
         ],
         pastEvents: [
