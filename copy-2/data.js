@@ -77,7 +77,7 @@ const websiteData = {
     team: {
         leadership: {
             name: "Naveenraj Thiyagarajan",
-            position: "Co-Founder & CEO",
+            position: "Founder & CEO",
             image: "images/naveenraj.jpg",
             socials: {
                 github: "https://github.com/navi-04",
@@ -92,7 +92,7 @@ const websiteData = {
         members: [
             {
                 name: "Suvitha",
-                position: "Co-Founder & COO",
+                position: "Co-founder & Lead Developer & Event Manager",
                 image: "images/suvitha.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -187,12 +187,12 @@ const websiteData = {
     events: {
         liveEvents: [
             // {
-                // title: "AI Innovation Summit",
-                // date: "MAY 14-16, 2025",
-                // location: "MKCE - Karur, India",
-                // description: "Explore the future of AI and machine learning with top experts and leaders.",
-                // link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
-                // buttonText: "LIVE NOW"
+            //     title: "Tech Conference 2023",
+            //     date: "Oct 15-16, 2023",
+            //     location: "Virtual",
+            //     description: "Join us for our virtual tech conference with industry leaders discussing the latest innovations.",
+            //     link: "#",
+            //     buttonText: "Join Stream"
             // }
         ],
         upcomingEvents: [
@@ -203,20 +203,18 @@ const websiteData = {
                 description: "Get to know about the life changing AI tools",
                 link: "https://forms.gle/mRXDzTrdng12CSwK7",
                 buttonText: "Register Now"
+            },
+            {
+                title: "AI Innovation Summit",
+                date: "April 15-17, 2025",
+                location: "MKCE - Karur, India",
+                description: "Explore the future of AI and machine learning with top experts and leaders.",
+                link: "#contact",
+                buttonText: "Register Now"
             }
-
           
         ],
         pastEvents: [
-            {
-                title: "AI Innovation Summit",
-                date: "MAY 14-16, 2025",
-                location: "MKCE - Karur, India",
-                description: "Explore the future of AI and machine learning with top experts and leaders. (code : FIW251)",
-                image: "/images/event/event - 1 .jpg",
-                link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
-                buttonText: "View Highlights"
-            }
             // {
             //     title: "Web Development Summit",
             //     date: "Aug 10-12, 2023",
