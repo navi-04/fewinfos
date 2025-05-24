@@ -186,14 +186,14 @@ const websiteData = {
     // Events data
     events: {
         liveEvents: [
-            {
-                title: "AI Innovation Summit",
-                date: "MAY 14-16, 2025",
-                location: "MKCE - Karur, India",
-                description: "Explore the future of AI and machine learning with top experts and leaders.",
-                link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
-                buttonText: "LIVE NOW"
-            }
+            // {
+                // title: "AI Innovation Summit",
+                // date: "MAY 14-16, 2025",
+                // location: "MKCE - Karur, India",
+                // description: "Explore the future of AI and machine learning with top experts and leaders.",
+                // link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
+                // buttonText: "LIVE NOW"
+            // }
         ],
         upcomingEvents: [
             {
@@ -204,18 +204,19 @@ const websiteData = {
                 link: "https://forms.gle/mRXDzTrdng12CSwK7",
                 buttonText: "Register Now"
             }
-            // ,
-            // {
-            //     title: "AI Innovation Summit",
-            //     date: "April 15-17, 2025",
-            //     location: "MKCE - Karur, India",
-            //     description: "Explore the future of AI and machine learning with top experts and leaders.",
-            //     link: "#contact",
-            //     buttonText: "Register Now"
-            // }
+
           
         ],
         pastEvents: [
+            {
+                title: "AI Innovation Summit",
+                date: "MAY 14-16, 2025",
+                location: "MKCE - Karur, India",
+                description: "Explore the future of AI and machine learning with top experts and leaders. (code : FIW251)",
+                image: "/images/event/event - 1 .jpg",
+                link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
+                buttonText: "View Highlights"
+            }
             // {
             //     title: "Web Development Summit",
             //     date: "Aug 10-12, 2023",
