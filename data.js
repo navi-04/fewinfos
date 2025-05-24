@@ -77,7 +77,7 @@ const websiteData = {
     team: {
         leadership: {
             name: "Naveenraj Thiyagarajan",
-            position: "Founder & CEO",
+            position: "Co-Founder & CEO",
             image: "images/naveenraj.jpg",
             socials: {
                 github: "https://github.com/navi-04",
@@ -92,7 +92,7 @@ const websiteData = {
         members: [
             {
                 name: "Suvitha",
-                position: "Lead Developer & Event Manager",
+                position: "Co-Founder & COO",
                 image: "images/suvitha.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
