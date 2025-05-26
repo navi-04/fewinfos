@@ -102,7 +102,7 @@ const websiteData = {
             },
             {
                 name: "Nureshma",
-                position: "Technical Engineer & Clients Manager",
+                position: "CTO",
                 image: "images/nureshma.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -112,7 +112,7 @@ const websiteData = {
             },
             {
                 name: "Nirmala",
-                position: "Social Media Manager & Technical Engineer",
+                position: "CMO",
                 image: "images/nirmala.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -120,19 +120,10 @@ const websiteData = {
                     instagram: "#"
                 }
             },
-            {
-                name: "Nishanthi",
-                position: "Technical Engineer & Clients Manager",
-                image: "images/nishanthi.jpg",
-                socials: {
-                    github: "https://github.com/navi-04",
-                    linkedin: "https://www.linkedin.com/in/nishanthi-shahana-b471b032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-                    instagram: "#"
-                }
-            },
+
             {
                 name: "Shivani",
-                position: "Social Media Manager & Technical Engineer",
+                position: "CFO",
                 image: "images/shivani.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -140,9 +131,32 @@ const websiteData = {
                     instagram: "#"
                 }
             },
+
+            {
+                name: "Nishanthi",
+                position: "PRODUCT MANAGER",
+                image: "images/nishanthi.jpg",
+                socials: {
+                    github: "https://github.com/navi-04",
+                    linkedin: "https://www.linkedin.com/in/nishanthi-shahana-b471b032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                    instagram: "#"
+                }
+            },
+
+             {
+                name: "Swathi",
+                position: "LEAD DEVELOPER",
+                image: "images/swathi.jpg",
+                socials: {
+                    github: "https://github.com/navi-04",
+                    linkedin: "https://www.linkedin.com/in/swathi-sundharaj-2a7242312",
+                    instagram: "#"
+                }
+            },
+            
             {
                 name: "Sudeep",
-                position: "Technical Engineer & Clients Manager",
+                position: "TECHNICAL DEVELOPER",
                 image: "images/sudeep.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -152,7 +166,7 @@ const websiteData = {
             },
             {
                 name: "Ragavi",
-                position: "Event Manager & Technical Engineer",
+                position: "TECHNICAL DEVELOPER",
                 image: "images/ragavi.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
@@ -162,24 +176,15 @@ const websiteData = {
             },
             {
                 name: "Sudharashanan",
-                position: "Technical Engineer & Clients Manager",
+                position: "TECHNICAL DEVELOPER",
                 image: "images/sudharashanan.jpg",
                 socials: {
                     github: "https://github.com/navi-04",
                     linkedin: "https://www.linkedin.com/in/sudharshanan-sathish-kumar-625776301/",
                     instagram: "#"
                 }
-            },
-            {
-                name: "Swathi",
-                position: "Event Manager & Technical Engineer",
-                image: "images/swathi.jpg",
-                socials: {
-                    github: "https://github.com/navi-04",
-                    linkedin: "https://www.linkedin.com/in/swathi-sundharaj-2a7242312",
-                    instagram: "#"
-                }
             }
+           
         ]
     },
 
