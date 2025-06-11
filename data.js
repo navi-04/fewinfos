@@ -56,12 +56,20 @@ const websiteData = {
             isFeatured: true
         },
         {
+            title: "Fewinfocad",
+            description: "A dynamic portal for college ",
+            features: ["Advanced in rendering", "Automated assignments", "Integration with the any system"],
+            icon: "fas fa-shield-alt",
+            github: "https://github.com/fewinfos/securegate",
+            isFeatured: false
+        },
+        {
             title: "FewAI CLI",
             description: "Next-generation command line bot",
             features: ["Advanced coding in terminal", "Automated works", "Integration with the system"],
             icon: "fas fa-shield-alt",
             github: "https://github.com/fewinfos/securegate",
-            isFeatured: false
+            isFeatured: true
         },
         {
             title: "FewAI BOT",
@@ -69,7 +77,7 @@ const websiteData = {
             features: ["Coding master", "Real time problem solving"],
             icon: "fas fa-robot",
             github: "https://github.com/fewinfos/securegate",
-            isFeatured: true
+            isFeatured: false
         }
     ],
 
