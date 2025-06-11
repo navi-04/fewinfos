@@ -123,7 +123,7 @@ const websiteData = {
 
             {
                 name: "Shivani",
-                position: "CFO",
+                position: "CCM",
                 image: "images/shivani.jpg",
                 socials: {
                     github: "https://github.com/Shivani-rajalakshmi",
