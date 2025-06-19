@@ -63,22 +63,22 @@ const websiteData = {
             github: "https://github.com/fewinfos/securegate",
             isFeatured: false
         },
-        {
-            title: "FewAI CLI",
-            description: "Next-generation command line bot",
-            features: ["Advanced coding in terminal", "Automated works", "Integration with the system"],
-            icon: "fas fa-shield-alt",
-            github: "https://github.com/fewinfos/securegate",
-            isFeatured: true
-        },
-        {
-            title: "FewAI BOT",
-            description: "Next-generation LLM bot",
-            features: ["Coding master", "Real time problem solving"],
-            icon: "fas fa-robot",
-            github: "https://github.com/fewinfos/securegate",
-            isFeatured: false
-        }
+        // {
+        //     title: "FewAI CLI",
+        //     description: "Next-generation command line bot",
+        //     features: ["Advanced coding in terminal", "Automated works", "Integration with the system"],
+        //     icon: "fas fa-shield-alt",
+        //     github: "https://github.com/fewinfos/securegate",
+        //     isFeatured: true
+        // },
+        // {
+        //     title: "FewAI BOT",
+        //     description: "Next-generation LLM bot",
+        //     features: ["Coding master", "Real time problem solving"],
+        //     icon: "fas fa-robot",
+        //     github: "https://github.com/fewinfos/securegate",
+        //     isFeatured: false
+        // }
     ],
 
     // Team members data
