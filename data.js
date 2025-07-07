@@ -21,7 +21,7 @@ const websiteData = {
     services: [
         {
             icon: "fas fa-desktop",
-            title: "Web Development",
+            title: "E-commerce websites",
             description: "Custom web solutions with cutting-edge technologies",
             technologies: ["React", "Node.js", "Python","HTML5","CSS3","Bootstrap"]
         },
@@ -42,6 +42,18 @@ const websiteData = {
             title: "One To One Mentorship",
             description: "Ideal solutions by our mentors",
             technologies: ["How to code", "How to use AI"]
+        },
+        {
+            icon: "fab fa-whatsapp",
+            title: "Business WhatsApp Management",
+            description: "Professional management of your business WhatsApp channel, including automation, customer engagement, and broadcast solutions.",
+            technologies: ["WhatsApp API", "Automation Tools", "Customer Support", "Broadcast Messaging"]
+        },
+        {
+            icon: "fas fa-search",
+            title: "SEO Service",
+            description: "Comprehensive SEO services to boost your website ranking, increase organic traffic, and improve online visibility.",
+            technologies: ["On-page SEO", "Off-page SEO", "Keyword Research", "Analytics", "Content Optimization"]
         }
     ],
 
