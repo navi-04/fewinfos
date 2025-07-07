@@ -162,16 +162,16 @@ const websiteData = {
                 }
             },
             
-            {
-                name: "Sudeep",
-                position: "TECHNICAL DEVELOPER",
-                image: "images/sudeep.jpg",
-                socials: {
-                    github: "https://github.com/Sudeep1805",
-                    linkedin: "https://www.linkedin.com/in/sudeep-k-14b442290",
-                    instagram: "#"
-                }
-            },
+            // {
+            //     name: "Sudeep",
+            //     position: "TECHNICAL DEVELOPER",
+            //     image: "images/sudeep.jpg",
+            //     socials: {
+            //         github: "https://github.com/Sudeep1805",
+            //         linkedin: "https://www.linkedin.com/in/sudeep-k-14b442290",
+            //         instagram: "#"
+            //     }
+            // },
             {
                 name: "Ragavi",
                 position: "TECHNICAL DEVELOPER",
@@ -181,17 +181,17 @@ const websiteData = {
                     linkedin: "https://www.linkedin.com/in/ragavi-s-96848925a/",
                     instagram: "#"
                 }
-            },
-            {
-                name: "Sudharashanan",
-                position: "TECHNICAL DEVELOPER",
-                image: "images/sudharashanan.jpg",
-                socials: {
-                    github: "https://github.com/Sudeep1805",
-                    linkedin: "https://www.linkedin.com/in/sudharshanan-sathish-kumar-625776301/",
-                    instagram: "#"
-                }
             }
+            // {
+            //     name: "Sudharashanan",
+            //     position: "TECHNICAL DEVELOPER",
+            //     image: "images/sudharashanan.jpg",
+            //     socials: {
+            //         github: "https://github.com/Sudeep1805",
+            //         linkedin: "https://www.linkedin.com/in/sudharshanan-sathish-kumar-625776301/",
+            //         instagram: "#"
+            //     }
+            // }
            
         ]
     },
