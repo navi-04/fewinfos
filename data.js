@@ -287,7 +287,7 @@ const websiteData = {
             students: 27
         },
         {
-            title: "Intermediate level in Python",
+            title: "Advanced level in Python",
             image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             level: "Intermediate",
             duration: "8 weeks",
@@ -295,11 +295,41 @@ const websiteData = {
             features: ["Hands-on Labs", "Industry Experts", "Certification Course", "Real-world Case Studies"],
             category: "infrastructure",
             isFeatured: false,
-            originalPrice: "₹999",
-            price: "₹499",
+            originalPrice: "₹1999",
+            price: "₹999",
             discount: 50,
             rating: 4.6,
             students: 13
+        },
+        {
+            title: "Intermediate in JavaScript",
+            image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+            level: "Intermediate",
+            duration: "6 weeks",
+            description: "Master modern JavaScript concepts including ES6+, async programming, DOM manipulation, and popular frameworks.",
+            features: ["Interactive Coding Exercises", "JavaScript Best Practices", "Real Project Implementation", "Career Guidance"],
+            category: "development",
+            isFeatured: true,
+            originalPrice: "₹1499",
+            price: "₹799",
+            discount: 47,
+            rating: 4.8,
+            students: 42
+        },
+        {
+            title: "React JS Development",
+            image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+            level: "Advanced",
+            duration: "10 weeks",
+            description: "Comprehensive course on building modern web applications with React, Redux, Hooks, and the entire React ecosystem.",
+            features: ["Component-Based Architecture", "State Management", "Full Project Portfolio", "Performance Optimization"],
+            category: "frontend",
+            isFeatured: true,
+            originalPrice: "₹2499",
+            price: "₹1299",
+            discount: 48,
+            rating: 4.9,
+            students: 36
         }
     ]
 };
