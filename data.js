@@ -265,8 +265,8 @@ const websiteData = {
             features: ["Expert Mentors", "Real-world Projects", "Lifetime Access"],
             category: "development",
             isFeatured: true,
-            originalPrice: "₹599",
-            price: "₹299",
+            originalPrice: "₹999",
+            price: "₹499",
             discount: 50,
             rating: 4.7,
             students: 28
