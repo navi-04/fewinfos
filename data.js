@@ -267,16 +267,24 @@ const websiteData = {
       // link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
       // buttonText: "LIVE NOW"
       // }
-    ],
-    upcomingEvents: [
       {
         title: "AI tools workshop ",
         date: "July 13(7pm - 9pm), 2025",
         location: "Online",
         description: "Get to know about the life changing AI tools",
-        link: "https://forms.gle/mRXDzTrdng12CSwK7",
-        buttonText: "Register Now",
+        link: "https://fewinfos.online/ai-tools.html",
+        buttonText: "visit site",
       },
+    ],
+    upcomingEvents: [
+      // {
+      //   title: "AI tools workshop ",
+      //   date: "July 13(7pm - 9pm), 2025",
+      //   location: "Online",
+      //   description: "Get to know about the life changing AI tools",
+      //   link: "https://forms.gle/mRXDzTrdng12CSwK7",
+      //   buttonText: "Register Now",
+      // },
     ],
     pastEvents: [
       {
@@ -286,7 +294,7 @@ const websiteData = {
         description:
           "Explore the future of AI and machine learning with top experts and leaders. (code : FIW251)",
         image: "/images/event/event - 1 .jpg",
-        link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
+        link: "https://fewinfos.online/gallery.html",
         buttonText: "View Highlights",
       },
       // {
