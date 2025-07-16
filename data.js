@@ -267,24 +267,17 @@ const websiteData = {
       // link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
       // buttonText: "LIVE NOW"
       // }
-      {
-        title: "AI tools workshop ",
-        date: "July 13(7pm - 9pm), 2025",
-        location: "Online",
-        description: "Get to know about the life changing AI tools",
-        link: "https://fewinfos.online/ai-tools.html",
-        buttonText: "visit site",
-      },
+
     ],
     upcomingEvents: [
-      // {
-      //   title: "AI tools workshop ",
-      //   date: "July 13(7pm - 9pm), 2025",
-      //   location: "Online",
-      //   description: "Get to know about the life changing AI tools",
-      //   link: "https://forms.gle/mRXDzTrdng12CSwK7",
-      //   buttonText: "Register Now",
-      // },
+      {
+        title: "Start Freelancing with ₹0 Investment ",
+        date: "July 31 (7pm - 8:30pm), 2025",
+        location: "Online",
+        description: "Start your freelancing journey with zero investment (crash course)",
+        link: "https://forms.gle/HuVN27F4LX7jfWEo7",
+        buttonText: "Register Now",
+      },
     ],
     pastEvents: [
       {
@@ -297,15 +290,14 @@ const websiteData = {
         link: "https://fewinfos.online/gallery.html",
         buttonText: "View Highlights",
       },
-      // {
-      //     title: "Web Development Summit",
-      //     date: "Aug 10-12, 2023",
-      //     location: "Mumbai, India",
-      //     description: "An insightful gathering of web developers discussing modern frameworks and methodologies.",
-      //     image: "images/event-webdev.jpg",
-      //     link: "#",
-      //     buttonText: "View Highlights"
-      // }
+      {
+        title: "AI tools workshop ",
+        date: "July 13(7pm - 9pm), 2025",
+        location: "Online",
+        description: "Get to know about the life changing AI tools",
+        link: "https://fewinfos.online/gallery.html",
+        buttonText: "visit Highlights",
+      }
     ],
   },
 
