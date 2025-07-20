@@ -158,7 +158,7 @@ const websiteData = {
     members: [
       {
         name: "Suvitha",
-        position: "Co-Founder & COO",
+        position: "COO",
         image: "images/suvitha.jpg",
         socials: {
           github: "https://github.com/SuvithaaaaR",
