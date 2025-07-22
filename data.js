@@ -214,7 +214,7 @@ const websiteData = {
 
       {
         name: "Nishanthi",
-        position: "TECHNICAL DEVELOPER",
+        position: "PRODUCT MANAGER & TECHNICAL DEVELOPER",
         image: "images/nishanthi.jpg",
         socials: {
           github: "https://github.com/Nishanthi1009",
