@@ -203,7 +203,7 @@ const websiteData = {
 
       {
         name: "Swathi",
-        position: "PRODUCT MANAGER & LEAD DEVELOPER",
+        position: "PM & LD",
         image: "images/swathi.jpg",
         socials: {
           github: "https://github.com/SWATHI-63",
@@ -212,17 +212,17 @@ const websiteData = {
         },
       },
 
-      {
-        name: "Nishanthi",
-        position: "PRODUCT MANAGER & TECHNICAL DEVELOPER",
-        image: "images/nishanthi.jpg",
-        socials: {
-          github: "https://github.com/Nishanthi1009",
-          linkedin:
-            "https://www.linkedin.com/in/nishanthi-shahana-b471b032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-          instagram: "#",
-        },
-      },
+      // {
+      //   name: "Nishanthi",
+      //   position: "PRODUCT MANAGER & TECHNICAL DEVELOPER",
+      //   image: "images/nishanthi.jpg",
+      //   socials: {
+      //     github: "https://github.com/Nishanthi1009",
+      //     linkedin:
+      //       "https://www.linkedin.com/in/nishanthi-shahana-b471b032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      //     instagram: "#",
+      //   },
+      // },
       // {
       //     name: "Sudeep",
       //     position: "TECHNICAL DEVELOPER",
@@ -235,7 +235,7 @@ const websiteData = {
       // },
       {
         name: "Ragavi",
-        position: "EVENT MANAGER & TECHNICAL DEVELOPER",
+        position: "HR",
         image: "images/ragavi.jpg",
         socials: {
           github: "https://github.com/ragavi1105",
