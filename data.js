@@ -259,14 +259,14 @@ const websiteData = {
   // Events data
   events: {
     liveEvents: [
-      // {
-      // title: "AI Innovation Summit",
-      // date: "MAY 14-16, 2025",
-      // location: "MKCE - Karur, India",
-      // description: "Explore the future of AI and machine learning with top experts and leaders.",
-      // link: "https://fewinfos.com/event/AI%20TOOL%20WORKSHOP/",
-      // buttonText: "LIVE NOW"
-      // }
+      {
+      title: "Expert Talk",
+      date: "August 2025",
+      location: "MKCE - Karur, India",
+      description: "Explore the future of Startup and entrepreneurship.",
+      link: "https://fewinfos.com/event/expert-talk/",
+      buttonText: "LIVE NOW"
+      }
 
     ],
     upcomingEvents: [
