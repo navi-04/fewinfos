@@ -259,25 +259,33 @@ const websiteData = {
   // Events data
   events: {
     liveEvents: [
-      {
-      title: "Expert Talk",
-      date: "August 2025",
-      location: "MKCE - Karur, India",
-      description: "Explore the future of Startup and entrepreneurship.",
-      link: "https://fewinfos.com/event/expert-talk/",
-      buttonText: "LIVE NOW"
-      }
+      // {
+      // title: "Teach a machine in 2 hours ",
+      // date: "26 oct 2025",
+      // location: "Online",
+      // description: "Join us for an insightful expert talk on AI and machine learning.",
+      // link: "https://fewinfos.com/register",
+      // buttonText: ""
+      // }
 
     ],
     upcomingEvents: [
-      {
-        title: "Start Freelancing with ₹0 Investment ",
-        date: "July 31 (7pm - 8:30pm), 2025",
-        location: "Online",
-        description: "Start your freelancing journey with zero investment (crash course)",
-        link: "https://forms.gle/HuVN27F4LX7jfWEo7",
-        buttonText: "Register Now",
-      },
+      // {
+      //   title: "Start Freelancing with ₹0 Investment ",
+      //   date: "July 31 (7pm - 8:30pm), 2025",
+      //   location: "Online",
+      //   description: "Start your freelancing journey with zero investment (crash course)",
+      //   link: "https://forms.gle/HuVN27F4LX7jfWEo7",
+      //   buttonText: "Register Now",
+      // },
+          {
+      title: "Teach a machine in 2 hours ",
+      date: "26 oct 2025",
+      location: "Online",
+      description: "Join us for an insightful expert talk on AI and machine learning.",
+      link: "https://fewinfos.com/register",
+      buttonText: "Register Now"
+      }
     ],
     pastEvents: [
       {
