@@ -1,49 +1,20 @@
 // FEWINFOS Website Data
 
 const websiteData = {
-  // Website keywords for SEO and chatbot
-  keywords: {
-    main: [
-      "web development",
-      "digital solutions",
-      "AI",
-      "social media management",
-      "mentorship",
-      "tech education",
-    ],
-    services: [
-      "web design",
-      "app development",
-      "digital marketing",
-      "AI solutions",
-      "mentorship",
-      "coding",
-    ],
-    technologies: [
-      "React",
-      "Node.js",
-      "Python",
-      "HTML5",
-      "CSS3",
-      "Bootstrap",
-      "SQL",
-    ],
-  },
-
   // Counters data
   counters: {
     yearsOfExperience: 2,
     happyClients: 15,
     projectsCompleted: 3,
-    eventsHosted: 2,
-    coursesOffered: 3, // New counter for courses
+    eventsHosted: 20,
+    coursesOffered: 5,
   },
 
   // Services data
   services: [
     {
       icon: "fas fa-desktop",
-      title: "E-commerce websites",
+      title: "E-commerce Websites",
       description: "Custom web solutions with cutting-edge technologies",
       technologies: [
         "React",
@@ -64,7 +35,7 @@ const websiteData = {
       icon: "fab fa-instagram",
       title: "Social Media Management",
       description: "Standard post and reels per months",
-      technologies: ["Post per day", "Reel per week", "stories per day"],
+      technologies: ["Post per day", "Reel per week", "Stories per day"],
     },
     {
       icon: "fas fa-book",
@@ -111,40 +82,24 @@ const websiteData = {
     },
     {
       title: "Fewinfocad",
-      description: "A dynamic portal for college ",
+      description: "A dynamic portal for college",
       features: [
         "Advanced in rendering",
         "Automated assignments",
-        "Integration with the any system",
+        "Integration with any system",
       ],
       icon: "fas fa-shield-alt",
       github: "https://github.com/fewinfos/securegate",
       isFeatured: false,
     },
-    // {
-    //     title: "FewAI CLI",
-    //     description: "Next-generation command line bot",
-    //     features: ["Advanced coding in terminal", "Automated works", "Integration with the system"],
-    //     icon: "fas fa-shield-alt",
-    //     github: "https://github.com/fewinfos/securegate",
-    //     isFeatured: true
-    // },
-    // {
-    //     title: "FewAI BOT",
-    //     description: "Next-generation LLM bot",
-    //     features: ["Coding master", "Real time problem solving"],
-    //     icon: "fas fa-robot",
-    //     github: "https://github.com/fewinfos/securegate",
-    //     isFeatured: false
-    // }
   ],
 
   // Team members data
   team: {
     leadership: {
       name: "Naveenraj Thiyagarajan",
-      position: "Founder & CEO",
-      image: "images/naveenraj.jpg",
+      position: "Co-Founder & CEO",
+      image: "../images/naveenraj.jpg",
       socials: {
         github: "https://github.com/navi-04",
         linkedin: "http://www.linkedin.com/in/navithiyagu",
@@ -158,8 +113,8 @@ const websiteData = {
     members: [
       {
         name: "Suvitha",
-        position: "Graphic Designer",
-        image: "images/suvitha.jpg",
+        position: "COO",
+        image: "../images/suvitha.jpg",
         socials: {
           github: "https://github.com/SuvithaaaaR",
           linkedin: "https://www.linkedin.com/in/suvitha-ramesh/",
@@ -168,8 +123,8 @@ const websiteData = {
       },
       {
         name: "Nureshma",
-        position: "SDE",
-        image: "images/nureshma.jpg",
+        position: "CTO",
+        image: "../images/nureshma.jpg",
         socials: {
           github: "https://github.com/Reshma-2006",
           linkedin:
@@ -179,8 +134,8 @@ const websiteData = {
       },
       {
         name: "Nirmala",
-        position: "SDE",
-        image: "images/nirmala.jpg",
+        position: "CMO",
+        image: "../images/nirmala.jpg",
         socials: {
           github: "https://github.com/nirmalaramadass",
           linkedin:
@@ -188,11 +143,10 @@ const websiteData = {
           instagram: "#",
         },
       },
-
       {
         name: "Shivani",
-        position: "Event Manager",
-        image: "images/shivani.jpg",
+        position: "CCM",
+        image: "../images/shivani.jpg",
         socials: {
           github: "https://github.com/Shivani-rajalakshmi",
           linkedin:
@@ -200,92 +154,42 @@ const websiteData = {
           instagram: "#",
         },
       },
-
       {
         name: "Swathi",
-        position: "SDE",
-        image: "images/swathi.jpg",
+        position: "PM & LD",
+        image: "../images/swathi.jpg",
         socials: {
           github: "https://github.com/SWATHI-63",
           linkedin: "https://www.linkedin.com/in/swathi-sundharaj-2a7242312",
           instagram: "#",
         },
       },
-
-      // {
-      //   name: "Nishanthi",
-      //   position: "PRODUCT MANAGER & TECHNICAL DEVELOPER",
-      //   image: "images/nishanthi.jpg",
-      //   socials: {
-      //     github: "https://github.com/Nishanthi1009",
-      //     linkedin:
-      //       "https://www.linkedin.com/in/nishanthi-shahana-b471b032b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      //     instagram: "#",
-      //   },
-      // },
-      // {
-      //     name: "Sudeep",
-      //     position: "TECHNICAL DEVELOPER",
-      //     image: "images/sudeep.jpg",
-      //     socials: {
-      //         github: "https://github.com/Sudeep1805",
-      //         linkedin: "https://www.linkedin.com/in/sudeep-k-14b442290",
-      //         instagram: "#"
-      //     }
-      // },
       {
         name: "Ragavi",
         position: "HR",
-        image: "images/ragavi.jpg",
+        image: "../images/ragavi.jpg",
         socials: {
           github: "https://github.com/ragavi1105",
           linkedin: "https://www.linkedin.com/in/ragavi-s-96848925a/",
           instagram: "#",
         },
       },
-      // {
-      //     name: "Sudharashanan",
-      //     position: "TECHNICAL DEVELOPER",
-      //     image: "images/sudharashanan.jpg",
-      //     socials: {
-      //         github: "https://github.com/Sudeep1805",
-      //         linkedin: "https://www.linkedin.com/in/sudharshanan-sathish-kumar-625776301/",
-      //         instagram: "#"
-      //     }
-      // }
     ],
   },
 
   // Events data
   events: {
-    liveEvents: [
-      // {
-      // title: "Teach a machine in 2 hours ",
-      // date: "26 oct 2025",
-      // location: "Online",
-      // description: "Join us for an insightful expert talk on AI and machine learning.",
-      // link: "https://fewinfos.com/register",
-      // buttonText: ""
-      // }
-
-    ],
+    liveEvents: [],
     upcomingEvents: [
-      // {
-      //   title: "Start Freelancing with ₹0 Investment ",
-      //   date: "July 31 (7pm - 8:30pm), 2025",
-      //   location: "Online",
-      //   description: "Start your freelancing journey with zero investment (crash course)",
-      //   link: "https://forms.gle/HuVN27F4LX7jfWEo7",
-      //   buttonText: "Register Now",
-      // },
-          {
-      title: "Teach a machine in 2 hours ",
-      date: "26 oct 2025",
-      location: "Online",
-      description: "Join us for an insightful expert talk on AI and machine learning.",
-      link: "https://fewinfos.com/register",
-      buttonText: "Register Now"
-      }
+      {
+        title: "Teach a machine in 2 hours",
+        date: "26 Oct 2025",
+        location: "Online",
+        description:
+          "Join us for an insightful expert talk on AI and machine learning.",
+        link: "https://fewinfos.com/register",
+        buttonText: "Register Now",
+      },
     ],
     pastEvents: [
       {
@@ -294,18 +198,18 @@ const websiteData = {
         location: "MKCE - Karur, India",
         description:
           "Explore the future of AI and machine learning with top experts and leaders. (code : FIW251)",
-        image: "/images/event/event - 1 .jpg",
+        image: "../images/event/event - 1 .jpg",
         link: "https://fewinfos.online/gallery.html",
         buttonText: "View Highlights",
       },
       {
-        title: "AI tools workshop ",
-        date: "July 13(7pm - 9pm), 2025",
+        title: "AI tools workshop",
+        date: "July 13 (7pm - 9pm), 2025",
         location: "Online",
         description: "Get to know about the life changing AI tools",
         link: "https://fewinfos.online/gallery.html",
-        buttonText: "visit Highlights",
-      }
+        buttonText: "Visit Highlights",
+      },
     ],
   },
 
@@ -415,17 +319,3 @@ const websiteData = {
 
 // Make data available globally
 window.websiteData = websiteData;
-
-// Test function to simulate empty event columns
-// Uncomment the sections you want to test as empty
-function testEmptyEventColumns() {
-  // Test all empty columns
-  websiteData.events.liveEvents = [];
-  websiteData.events.pastEvents = [];
-
-  // Keep one event for testing
-  // websiteData.events.upcomingEvents = websiteData.events.upcomingEvents;
-}
-
-// Comment out this line to show all events
-// testEmptyEventColumns();
