@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
         
         <div className="hero-actions">
-          <button className="cta-button primary">Start Now</button>
+          <button className="cta-button primary" onClick={() => navigate('/services')}>Start Now</button>
           <button className="cta-button secondary" onClick={() => navigate('/about')}>
             Learn More
           </button>
