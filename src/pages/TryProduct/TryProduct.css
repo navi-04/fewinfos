@@ -1,0 +1,211 @@
+.try-product-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 100px 20px 60px;
+}
+
+.try-product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #fff;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  color: #003366;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background: #003366;
+  color: #fff;
+}
+
+.try-product-header {
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 51, 102, 0.3);
+}
+
+.try-product-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.try-product-header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+.try-product-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.github-link,
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.github-link {
+  text-decoration: none;
+}
+
+.github-link:hover,
+.share-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+.try-product-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+}
+
+.try-product-content h3 {
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.try-product-content ol,
+.try-product-content ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.try-product-content li {
+  margin-bottom: 15px;
+}
+
+.try-product-content strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.try-product-content p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.try-product-content a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.try-product-content a:hover {
+  text-decoration: underline;
+}
+
+.try-product-content code {
+  background: #f4f4f4;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #e91e63;
+  font-size: 0.9em;
+}
+
+.try-product-content button {
+  padding: 12px 24px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+}
+
+.try-product-content button:hover {
+  background: #004080;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.4);
+}
+
+.try-product-error {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.try-product-error h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.try-product-error button {
+  padding: 12px 24px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.try-product-error button:hover {
+  background: #004080;
+}
+
+@media (max-width: 768px) {
+  .try-product-page {
+    padding: 80px 15px 40px;
+  }
+
+  .try-product-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .try-product-header p {
+    font-size: 1rem;
+  }
+
+  .try-product-content {
+    padding: 20px;
+  }
+
+  .try-product-content h3 {
+    font-size: 1.5rem;
+  }
+}

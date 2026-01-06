@@ -1,0 +1,167 @@
+.our-work {
+  padding: 100px 20px;
+  background: #f8f9fa;
+}
+
+.our-work-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-work-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  align-items: stretch;
+}
+
+.work-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 50px 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 51, 102, 0.08);
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 51, 102, 0.15);
+  border-color: #003366;
+}
+
+.work-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #003366, #0066cc);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.work-card:hover .work-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.work-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+.work-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.work-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.work-button {
+  background: linear-gradient(135deg, #003366, #0066cc);
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 5px 20px rgba(0, 51, 102, 0.2);
+}
+
+.work-button:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 30px rgba(0, 51, 102, 0.3);
+}
+
+.work-button .arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.work-button:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .our-work {
+    padding: 60px 20px;
+  }
+
+  .our-work-heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .work-card {
+    padding: 40px 30px;
+  }
+
+  .work-card h3 {
+    font-size: 24px;
+  }
+
+  .work-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .work-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-work-heading {
+    font-size: 28px;
+  }
+
+  .work-card {
+    padding: 30px 20px;
+  }
+
+  .work-card h3 {
+    font-size: 22px;
+  }
+
+  .work-card p {
+    font-size: 15px;
+  }
+
+  .work-button {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}

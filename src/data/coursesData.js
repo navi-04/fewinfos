@@ -1,0 +1,126 @@
+export const coursesData = [
+  {
+    title: "How to code like pro",
+    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    level: "Intermediate",
+    duration: "3 weeks",
+    description: "Learn how to code like a professional using C, Java, Python, and JavaScript.",
+    features: ["Expert Mentors", "Real-world Projects", "Lifetime Access"],
+    detailedDescription: [
+      "This course is designed to strengthen your core programming fundamentals across multiple languages including C, Java, Python, and JavaScript.",
+      "You will learn industry-standard coding practices, problem-solving techniques, and how to write clean, maintainable, and efficient code.",
+      "By the end of the course, you will be confident in tackling real-world programming challenges and transitioning to advanced development paths."
+    ],
+    category: "development",
+    isFeatured: true,
+    originalPrice: 1000,
+    price: 499,
+    discount: 50,
+    rating: 4.7,
+    students: 28,
+    paymentQR: require("../assets/courses/499.jpg"),
+  },
+
+  {
+    title: "Git and Github",
+    image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    level: "Beginner",
+    duration: "2 weeks",
+    description: "Learn Git version control and GitHub collaboration from scratch.",
+    features: ["Live Sessions", "Practical Exercises", "Industry Projects", "Certification"],
+    detailedDescription: [
+      "This beginner-friendly course introduces you to Git and GitHub, essential tools used by developers worldwide for version control and collaboration.",
+      "You will learn how to manage repositories, track changes, handle branches, resolve conflicts, and collaborate effectively in teams.",
+      "By the end of the course, you will confidently use Git and GitHub in personal, academic, and professional projects."
+    ],
+    category: "data",
+    isFeatured: true,
+    originalPrice: 1500,
+    price: 999,
+    discount: 42,
+    rating: 4.5,
+    students: 27,
+    paymentQR: require("../assets/courses/999.jpg"),
+  },
+
+  {
+    title: "Advanced level in Python",
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    level: "Intermediate",
+    duration: "8 weeks",
+    description: "Master advanced Python concepts for data science and machine learning.",
+    features: [
+      "Hands-on Labs",
+      "Industry Experts",
+      "Certification Course",
+      "Real-world Case Studies",
+    ],
+    detailedDescription: [
+      "This advanced Python course focuses on building strong foundations in data handling, algorithms, and performance optimization.",
+      "You will work with real datasets, explore data science workflows, and understand how Python is used in machine learning applications.",
+      "By course completion, you will be prepared to apply Python in analytics, automation, and AI-driven projects."
+    ],
+    category: "infrastructure",
+    isFeatured: false,
+    originalPrice: 1500,
+    price: 749,
+    discount: 50,
+    rating: 4.6,
+    students: 13,
+    paymentQR: require("../assets/courses/749.jpg"),
+  },
+
+  {
+    title: "Intermediate in JavaScript",
+    image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    level: "Intermediate",
+    duration: "6 weeks",
+    description: "Deep dive into modern JavaScript including ES6+, async programming, and DOM manipulation.",
+    features: [
+      "Interactive Coding Exercises",
+      "JavaScript Best Practices",
+      "Real Project Implementation",
+      "Career Guidance",
+    ],
+    detailedDescription: [
+      "This course helps you move beyond JavaScript basics into advanced concepts used in modern web development.",
+      "You will master asynchronous programming, browser APIs, modular code, and performance optimization techniques.",
+      "By the end, you will be able to build complex, scalable JavaScript applications with confidence."
+    ],
+    category: "development",
+    isFeatured: true,
+    originalPrice: 1500,
+    price: 839,
+    discount: 44,
+    rating: 4.8,
+    students: 42,
+    paymentQR: require("../assets/courses/839.jpg"),
+  },
+
+  {
+    title: "React JS Development",
+    image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    level: "Advanced",
+    duration: "10 weeks",
+    description: "Build modern, scalable web applications using React, Hooks, and the React ecosystem.",
+    features: [
+      "Component-Based Architecture",
+      "State Management",
+      "Full Project Portfolio",
+      "Performance Optimization",
+    ],
+    detailedDescription: [
+      "This advanced React course teaches you how to build professional-grade front-end applications using modern React practices.",
+      "You will work with hooks, state management, reusable components, and real-world project architectures.",
+      "By the end of the course, you will have a strong React portfolio and be ready for front-end developer roles."
+    ],
+    category: "frontend",
+    isFeatured: true,
+    originalPrice: 1500,
+    price: 899,
+    discount: 47,
+    rating: 4.9,
+    students: 36,
+    paymentQR: require("../assets/courses/899.jpg"),
+  },
+];
