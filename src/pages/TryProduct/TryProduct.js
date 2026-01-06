@@ -19,7 +19,7 @@ const TryProduct = () => {
     const shareData = {
       title: product.title,
       text: `Try ${product.title} - ${product.description}. FREE to use!`,
-      url: `https://fewinfos.com/try-product/${productId}`
+      url: `https://fewinfos.com/#/try-product/${productId}`
     };
 
     try {

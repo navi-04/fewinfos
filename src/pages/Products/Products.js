@@ -15,8 +15,8 @@ const Products = () => {
 
   const handleShareProduct = async (product, index) => {
     const productUrl = product.isFree 
-      ? `https://fewinfos.com/try-product/${index}`
-      : `https://fewinfos.com/product-buy/${index}`;
+      ? `https://fewinfos.com/#/try-product/${index}`
+      : `https://fewinfos.com/#/product-buy/${index}`;
     
     const shareData = {
       title: product.title,
@@ -42,7 +42,7 @@ const Products = () => {
     const shareData = {
       title: course.title,
       text: `Check out ${course.title} - ${course.description}. Only ₹${course.price}! ${course.discount > 0 ? `${course.discount}% OFF` : ''}`,
-      url: `https://fewinfos.com/course-buy/${index}`
+      url: `https://fewinfos.com/#/course-buy/${index}`
     };
 
     try {

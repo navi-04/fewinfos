@@ -30,7 +30,7 @@ const Services = () => {
     const shareData = {
       title: service.title,
       text: `Check out ${service.title} - ${service.description}. Starting from ₹${formatPrice(service.price)}`,
-      url: `https://fewinfos.com/service-buy/${index}`
+      url: `https://fewinfos.com/#/service-buy/${index}`
     };
 
     try {
