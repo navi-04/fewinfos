@@ -3,7 +3,7 @@ export const teamData = {
     {
       name: "Naveenraj Thiyagarajan",
       position: "Founder & CEO",
-      image: require("../assets/team/naveenraj.jpg"),
+      image: require("../assets/team/naveenraj.png"),
       socials: {
         github: "https://github.com/navi-04",
         linkedin: "http://www.linkedin.com/in/navithiyagu",
