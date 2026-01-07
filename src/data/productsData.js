@@ -258,4 +258,46 @@ export const productsData = [
 
     `,
   },
+   {
+    title: "Problem2Project",
+    description: "An site for finding project ideas based on domains",
+    image: require("../assets/products/p3.png"),
+    features: [
+      "Domain-based project suggestions",
+      "User-friendly interface",
+      "Regularly updated ideas",
+    ],
+    icon: "fas fa-shield-alt",
+    price: 499,
+    isFree: true,
+    category: "Solutions",
+    // manualLink: "https://pypi.org/project/layerlens/",
+    // contributeLink: "https://github.com/navi-04/layerlens",
+    instructionsHtml: `
+     <div style="font-family: Arial, sans-serif; color: #003366; max-width: 100%; padding: 32px 16px; margin: 0 auto; box-sizing: border-box; text-align: center;">
+
+  <h3 style="color:#002244; font-size: 1.5em; margin-bottom: 16px;">Visit Problem2Project</h3>
+  
+  <p stylet="margin: 16px 0; font-size: 1.1em;">Click the button below to explore project ideas based on different domains.</p>
+
+  <a href="https://problem2project.site" target="_blank" rel="noopener noreferrer"
+    style="display:inline-block; background:#003366; color:#fff; border:none; padding:14px 28px; border-radius:6px; cursor:pointer; font-size:1em; text-decoration:none; margin-top: 16px;">
+    Go to Problem2Project
+  </a>
+
+  <p style="margin-top: 24px; font-size: 0.9em; color: #666;">
+    You will be redirected to <strong>problem2project.site</strong>
+  </p>
+
+</div>
+
+<script>
+  // Auto-redirect after 3 seconds (optional)
+  setTimeout(function() {
+    window.open('https://problem2project.site', '_blank');
+  }, 3000);
+</script>
+
+    `,
+  },
 ];
