@@ -10,16 +10,17 @@ export const teamData = {
         instagram: "https://www.instagram.com/naveenraj.thiyagarajan",
       }
     },
-     {
-      name: "Rahul",
-      position: "Sales Intern",
-      image: require("../assets/team/rahul1.jpeg"),
+        {
+      name: "Suvitha",
+      position: "Graphic Designer",
+      image: require("../assets/team/suvitha.jpeg"),
       socials: {
-        github: "https://github.com/RAHUL-DevelopeRR",
-        linkedin: "https://www.linkedin.com/in/rahulsrinivasan7",
+        github: "https://github.com/SuvithaaaaR",
+        linkedin: "https://www.linkedin.com/in/suvitha-ramesh/",
+        instagram: "#",
       },
     },
-    {
+        {
       name: "Nirmala",
       position: "SDE",
       image: require("../assets/team/nirmala.jpg"),
@@ -30,16 +31,6 @@ export const teamData = {
       },
     },
     {
-      name: "Suvitha",
-      position: "Graphic Designer",
-      image: require("../assets/team/suvitha.jpeg"),
-      socials: {
-        github: "https://github.com/SuvithaaaaR",
-        linkedin: "https://www.linkedin.com/in/suvitha-ramesh/",
-        instagram: "#",
-      },
-    },
-      {
       name: "Nureshma",
       position: "SDE",
       image: require("../assets/team/nureshma.jpg"),
@@ -49,6 +40,16 @@ export const teamData = {
         instagram: "#",
       },
     },
+     {
+      name: "Rahul",
+      position: "Sales Intern",
+      image: require("../assets/team/rahul1.jpeg"),
+      socials: {
+        github: "https://github.com/RAHUL-DevelopeRR",
+        linkedin: "https://www.linkedin.com/in/rahulsrinivasan7",
+      },
+    },
+      
     {
       name: "Shivani",
       position: "Event Manager",
