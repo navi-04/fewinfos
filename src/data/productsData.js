@@ -40,6 +40,23 @@ export const productsData = [
       style="width: 100%; padding: 8px; margin-bottom: 12px;"
     />
 
+    <label style="font-weight: bold;">Theme</label>
+    <select
+      id="theme"
+      style="width: 100%; padding: 8px; margin-bottom: 16px;"
+    >
+      <option value="light">light – Clean GitHub light theme</option>
+      <option value="dark">dark – GitHub dark theme</option>
+      <option value="dracula">dracula – Popular purple-based dark theme</option>
+      <option value="nord">nord – Arctic, bluish color palette</option>
+      <option value="monokai">monokai – Classic vibrant code editor theme</option>
+      <option value="gruvbox">gruvbox – Retro groove warm colors</option>
+      <option value="solarized">solarized – Precision color scheme (dark)</option>
+      <option value="tokyonight">tokyonight – Calm Japanese night aesthetic</option>
+      <option value="catppuccin">catppuccin – Soothing pastel theme</option>
+      <option value="ocean">ocean – Deep ocean blue dark theme</option>
+    </select>
+
     <button
       type="submit"
       style="background: #003366; color: white; padding: 10px; border: none; border-radius: 4px;"
@@ -102,12 +119,13 @@ export const productsData = [
   function generateURL() {
     const username = document.getElementById("username").value.trim();
     const repo = document.getElementById("repo").value.trim();
+    const theme = document.getElementById("theme").value;
 
     const url =
-      "https://github-repo-readme-stats.vercel.app/api/?username=" +
-      encodeURIComponent(username) +
-      "&repo=" +
-      encodeURIComponent(repo);
+      "https://github-repo-readme-stats.vercel.app/api/?" +
+      "username=" + encodeURIComponent(username) +
+      "&repo=" + encodeURIComponent(repo) +
+      "&theme=" + encodeURIComponent(theme);
 
     document.getElementById("generatedURL").textContent = url;
     document.getElementById("preview").src = url;
@@ -129,7 +147,6 @@ export const productsData = [
     });
   }
 </script>
-
 
     `,
   },
