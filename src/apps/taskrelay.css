@@ -1,0 +1,100 @@
+.taskrelay-page {
+  min-height: 100vh;
+}
+
+.taskrelay-hero {
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  color: white;
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.taskrelay-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.taskrelay-hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.taskrelay-content {
+  padding: 80px 20px;
+  background: #f0f4f8;
+}
+
+.taskrelay-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 51, 102, 0.1);
+  border-top: 4px solid #003366;
+}
+
+.taskrelay-text {
+  color: #2c3e50;
+}
+
+.taskrelay-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.taskrelay-text h2:first-child {
+  margin-top: 0;
+}
+
+.taskrelay-text p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #34495e;
+}
+
+.taskrelay-text ul {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.taskrelay-text ul li {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #34495e;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .taskrelay-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .taskrelay-hero-content p {
+    font-size: 1rem;
+  }
+
+  .taskrelay-container {
+    padding: 30px 20px;
+  }
+
+  .taskrelay-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .taskrelay-text p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .taskrelay-text ul li {
+    font-size: 0.95rem;
+  }
+}

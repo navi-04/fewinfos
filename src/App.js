@@ -17,6 +17,7 @@ import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import TaskRelayPrivacy from './apps/taskrelay';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -50,6 +51,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/apps/taskrelay" element={<TaskRelayPrivacy />} />
         </Routes>
       </main>
 
