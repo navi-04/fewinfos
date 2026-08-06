@@ -33,7 +33,7 @@ export const teamData = {
         {
       name: "Vishnu",
       position: "Chief Software Engineer",
-      image: require("../assets/team/image.png"),
+      image: require("../assets/team/vishnu.jpeg"),
       socials: {
         github: "https://github.com/nirmalaramadass",
         linkedin: "https://www.linkedin.com/in/nirmala-ramadas-16b081290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
